@@ -6,6 +6,9 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+p {
+    margin: 0 0 2px;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -21,9 +24,10 @@ body {
 }
 
 /* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
+.navbar {
+    border-radius: 4px;
+    background-color: white;
+    border: white;
 }
 .navbar-wrapper .navbar {
   padding-right: 15px;
@@ -32,6 +36,55 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+.navbar-wrapper .navbar li .fa-shopping-cart {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand {
+  color: white;
+  font-weight: 600;
+}
+.navbar-brand>img {
+  display: inline-block;
+  width: 143px;
+  margin-top: -30px;
+}
+.navbar-brand>img:hover {
+  opacity: 0.9;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(149, 16, 172);
+  font-weight: 550; 
+}
+.navbar-inverse .navbar-nav>li.especial>a, .navbar-inverse .navbar-nav>li.especial>a {
+    color: rgb(40, 96, 144);
+    background-color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: rgb(149, 16, 172);
+    transition: 0.5s;
+}
+.navbar-inverse .navbar-nav>li.especial>a:focus, .navbar-inverse .navbar-nav>li.especial>a:hover {
+    color: #fff;
+    background-color: rgb(40, 96, 144);
+    transition: 0.5s;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgb(149, 16, 172);
+}
+.navbar-inverse .navbar-toggle {
+  background-color: rgb(149, 16, 172);
+  border: 2px solid rgb(149,16,172);
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: rgb(149, 16, 172);
+}
+.navbar-inverse .navbar-nav>.active>a {
+    color: rgb(149, 16, 172);
+    background-color: #fff;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -39,8 +92,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  min-height: 100%;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -56,9 +108,59 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   min-width: 100%;
-  height: 500px;
+  min-height: 100%;
 }
+
+/* open texts */
+
+.open-texts {
+  background-color: rgb(149, 16, 172);
+  margin-bottom: 20px;
+  line-height: auto;
+}
+.open-texts h3 {
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 550;
+  text-transform: uppercase;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 40px;
+}
+
+/* pics */
+.container .row .col-md-4 img {
+  margin-bottom: 5px;
+}
+.container .row i.fa-plus-circle {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.container .ver-todas {
+  margin: 30px 0;
+}
+.container .row a.plus-section {
+  text-decoration: none;
+  font-size: 23px;
+  padding: 3px 15px;
+  color: white;
+  background-color: rgb(149, 16, 172);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+.container .row a.plus-section:hover {
+  background-color: white;
+  color: rgb(149, 16, 172);
+  transition: 0.6s;
+  border: 2px solid rgb(149, 16, 172);
+}
+
 
 
 /* MARKETING CONTENT
