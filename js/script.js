@@ -6,14 +6,14 @@ var main = function() {
 		description: "bla bla bla"
 	};
 
-	$("#testLocalStorage").on('click', function () {
+	/*$("#testLocalStorage").on('click', function () {
 		localStorage.setItem("testModel", test.model);
 		localStorage.setItem("testDescription", test.description);
 	});
 
 	$("#testDisplayModel").html(localStorage.getItem("testModel"));
 	$("#testDisplayDescription").html(localStorage.getItem("testDescription"));
-
+	*/
 };
 
 

@@ -56,10 +56,6 @@ p {
   color: rgb(149, 16, 172);
   font-weight: 550; 
 }
-.navbar-inverse .navbar-nav>li.especial>a, .navbar-inverse .navbar-nav>li.especial>a {
-    color: rgb(40, 96, 144);
-    background-color: #fff;
-}
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
     color: #fff;
     background-color: rgb(149, 16, 172);
@@ -132,7 +128,7 @@ p {
 }
 
 /* pics */
-.container .row .col-md-4 img {
+.container .row .col-md-4 img, .container .row .col-md-6 img {
   margin-bottom: 5px;
 }
 .container .row i.fa-plus-circle {
