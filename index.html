@@ -35,6 +35,8 @@
     <!-- Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -71,7 +73,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="pages/login.html">Login</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Nav header</li>
                     <li><a href="#">Separated link</a></li>
@@ -96,8 +98,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Sonja Acessórios</h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h3>A BELEZA ESTÁ NOS DETALHES</h3>
             </div>
           </div>
         </div>
@@ -118,46 +119,46 @@
     <div class="container" ng-controller="MainController">
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ anneOne.page }}"><img ng-src="{{ anneOne.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ anneOne.page }}"><img ng-src="{{ anneOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ anneOne.name }}</p>
-          <p>R$ {{ anneOne.price }}</p>
+          <p class="price">R$ {{ anneOne.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ carolina.page }}"><img ng-src="{{ carolina.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ carolina.page }}"><img ng-src="{{ carolina.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ carolina.name }}</p>
-          <p>R$ {{ carolina.price }}</p>
+          <p class="price">R$ {{ carolina.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ dani.page }}"><img ng-src="{{ dani.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ dani.page }}"><img ng-src="{{ dani.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ dani.name }}</p>
-          <p>R$ {{ dani.price }}</p>
+          <p class="price">R$ {{ dani.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ mell.page }}"><img ng-src="{{ mell.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ mell.page }}"><img ng-src="{{ mell.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ mell.name }}</p>
-          <p>R$ {{ mell.price }}</p>
+          <p class="price">R$ {{ mell.price }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ deniseOne.page }}"><img ng-src="{{ deniseOne.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ deniseOne.page }}"><img ng-src="{{ deniseOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ deniseOne.name }}</p>
-          <p>R$ {{ deniseOne.price }}</p>
+          <p class="price">R$ {{ deniseOne.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ giseleOne.page }}"><img ng-src="{{ giseleOne.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ giseleOne.page }}"><img ng-src="{{ giseleOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ giseleOne.name }}</p>
-          <p>R$ {{ giseleOne.price }}</p>
+          <p class="price">R$ {{ giseleOne.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ helenaOne.page }}"><img ng-src="{{ helenaOne.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ helenaOne.page }}"><img ng-src="{{ helenaOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ helenaOne.name }}</p>
-          <p>R$ {{ helenaOne.price }}</p>
+          <p class="price">R$ {{ helenaOne.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/tiaras/{{ luciaTwo.page }}"><img ng-src="{{ luciaTwo.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/tiaras/{{ luciaTwo.page }}"><img ng-src="{{ luciaTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ luciaTwo.name }}</p>
-          <p>R$ {{ luciaTwo.price }}</p>
+          <p class="price">R$ {{ luciaTwo.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
@@ -172,46 +173,46 @@
     <div class="container" ng-controller="MainController">
       <div class="row">
         <div class="col-md-3  col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ esmeralda.page }}"><img ng-src="{{ esmeralda.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ esmeralda.page }}"><img ng-src="{{ esmeralda.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ esmeralda.name }}</p>
-          <p>R$ {{ esmeralda.price }}</p>
+          <p class="price">R$ {{ esmeralda.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ jadeOne.page }}"><img ng-src="{{ jadeOne.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ jadeOne.page }}"><img ng-src="{{ jadeOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ jadeOne.name }}</p>
-          <p>R$ {{ jadeOne.price }}</p>
+          <p class="price">R$ {{ jadeOne.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ onix.page }}"><img ng-src="{{ onix.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ onix.page }}"><img ng-src="{{ onix.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ onix.name }}</p>
-          <p>R$ {{ onix.price }}</p>
+          <p class="price">R$ {{ onix.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ safiraTwo.page }}"><img ng-src="{{ safiraTwo.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ safiraTwo.page }}"><img ng-src="{{ safiraTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ safiraTwo.name }}</p>
-          <p>R$ {{ safiraTwo.price }}</p>
+          <p class="price">R$ {{ safiraTwo.price }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ rubi.page }}"><img ng-src="{{ rubi.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ rubi.page }}"><img ng-src="{{ rubi.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ rubi.name }}</p>
-          <p>R$ {{ rubi.price }}</p>
+          <p class="price">R$ {{ rubi.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ safiraOne.page }}"><img ng-src="{{ safiraOne.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ safiraOne.page }}"><img ng-src="{{ safiraOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ safiraOne.name }}</p>
-          <p>R$ {{ safiraOne.price }}</p>
+          <p class="price">R$ {{ safiraOne.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ topazio.page }}"><img ng-src="{{ topazio.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ topazio.page }}"><img ng-src="{{ topazio.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ topazio.name }}</p>
-          <p>R$ {{ topazio.price }}</p>
+          <p class="price">R$ {{ topazio.price }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="pages/{{ jadeTwo.page }}"><img ng-src="{{ jadeTwo.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ jadeTwo.page }}"><img ng-src="{{ jadeTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ jadeTwo.name }}</p>
-          <p>R$ {{ jadeTwo.price }}</p>
+          <p class="price">R$ {{ jadeTwo.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
@@ -225,15 +226,15 @@
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-6">
-          <a ng-href="pages/{{ calcinhaOne.page }}"><img ng-src="{{ calcinhaOne.cover }}" class="img-responsive"></a>
+        <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+          <a ng-href="pages/{{ calcinhaOne.page }}"><img ng-src="{{ calcinhaOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ calcinhaOne.name }}</p>
-          <p>R$ {{ calcinhaOne.price }}</p>
+          <p class="price">R$ {{ calcinhaOne.price }}</p>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
-          <a ng-href="pages/{{ calcinhaTwo.page }}"><img ng-src="{{ calcinhaTwo.cover }}" class="img-responsive"></a>
+        <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+          <a ng-href="pages/{{ calcinhaTwo.page }}"><img ng-src="{{ calcinhaTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ calcinhaTwo.name }}</p>
-          <p>R$ {{ calcinhaTwo.price }}</p>
+          <p class="price">R$ {{ calcinhaTwo.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
@@ -248,19 +249,19 @@
     <div class="container" ng-controller="MainController">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ delicado.page }}"><img ng-src="{{ delicado.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ delicado.page }}"><img ng-src="{{ delicado.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ delicado.name }}</p>
-          <p>R$ {{ delicado.price }}</p>
+          <p class="price">R$ {{ delicado.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ fashion.page }}"><img ng-src="{{ fashion.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ fashion.page }}"><img ng-src="{{ fashion.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ fashion.name }}</p>
-          <p>R$ {{ fashion.price }}</p>
+          <p class="price">R$ {{ fashion.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ ternura.page }}"><img ng-src="{{ ternura.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ ternura.page }}"><img ng-src="{{ ternura.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ ternura.name }}</p>
-          <p>R$ {{ ternura.price }}</p>
+          <p class="price">R$ {{ ternura.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
@@ -275,36 +276,36 @@
     <div class="container" ng-controller="MainController">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="{{ gravataAmarela.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="{{ gravataAmarela.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ gravataAmarela.name }}</p>
-          <p>R$ {{ gravataAmarela.price }}</p>
+          <p class="price">R$ {{ gravataAmarela.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="{{ gravataListradaTorto.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="{{ gravataListradaTorto.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ gravataListradaTorto.name }}</p>
-          <p>R$ {{ gravataListradaTorto.price }}</p>
+          <p class="price">R$ {{ gravataListradaTorto.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="{{ gravataPreta.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="{{ gravataPreta.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ gravataPreta.name }}</p>
-          <p>R$ {{ gravataPreta.price }}</p>
+          <p class="price">R$ {{ gravataPreta.price }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="{{ borboletaBege.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="{{ borboletaBege.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ borboletaBege.name }}</p>
-          <p>R$ {{ borboletaBege.price }}</p>
+          <p class="price">R$ {{ borboletaBege.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="{{ borboletaBranca.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="{{ borboletaBranca.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ borboletaBranca.name }}</p>
-          <p>R$ {{ borboletaBranca.price }}</p>
+          <p class="price">R$ {{ borboletaBranca.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="{{ borboletaAzul.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="{{ borboletaAzul.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ borboletaAzul.name }}</p>
-          <p>R$ {{ borboletaAzul.price }}</p>
+          <p class="price">R$ {{ borboletaAzul.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
@@ -318,19 +319,19 @@
     <div class="container" ng-controller="MainController">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ suspensorioBege.page }}"><img ng-src="{{ suspensorioBege.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ suspensorioBege.page }}"><img ng-src="{{ suspensorioBege.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ suspensorioBege.name }}</p>
-          <p>R$ {{ suspensorioBege.price }}</p>
+          <p class="price">R$ {{ suspensorioBege.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ suspensorioPreto.page }}"><img ng-src="{{ suspensorioPreto.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ suspensorioPreto.page }}"><img ng-src="{{ suspensorioPreto.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ suspensorioPreto.name }}</p>
-          <p>R$ {{ suspensorioPreto.price }}</p>
+          <p class="price">R$ {{ suspensorioPreto.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-          <a ng-href="pages/{{ suspensorioAzul.page }}"><img ng-src="{{ suspensorioAzul.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ suspensorioAzul.page }}"><img ng-src="{{ suspensorioAzul.cover }}" class="img-responsive img-thumbnail"></a>
           <p>{{ suspensorioAzul.name }}</p>
-          <p>R$ {{ suspensorioAzul.price }}</p>
+          <p class="price">R$ {{ suspensorioAzul.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
@@ -428,7 +429,7 @@
     <script src="js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/loginScript.js"></script>
 
     <!-- Modules -->
     <script src="js/app.js"></script>

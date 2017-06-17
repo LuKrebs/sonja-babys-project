@@ -18,7 +18,6 @@ li {
 }
 
 
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -90,7 +89,111 @@ li {
     background-color: #fff;
 }
 
-/* End ~> Navbar */
+#cartContainer .row {
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+#cartContainer .row:hover {
+  border: 2px solid rgb(149, 16, 172);
+  transition: 0.5s;
+}
+
+#cartContainer .col-md-3, #cartContainer .col-md-4 {
+  height: auto;
+  vertical-align: middle;
+}
+#cartContainer h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px auto; 
+  color: rgb(149, 16, 172);
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+}
+#cartContainer .subtotal {
+  margin: 40px auto; 
+  font-family: 'Crimson Text', serif;
+  color: #5a5a5a;
+  font-weight: 600;
+}
+#cartContainer .remove {
+  color: red;
+  margin: 50px auto; 
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+#cartContainer .fa-times {
+  margin-right: 10px;
+  font-weight: 900;
+}
+#cartContainer h4 {
+  font-weight: 500;
+  margin: 10px auto; 
+  color: rgb(149, 16, 172);
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#cartContainer img {
+  margin: 10px auto;
+}
+#cartContainer h4.cor {
+  margin: 13px auto;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#cartContainer span {
+  padding: 4px 15px; 
+  margin: 5px auto 5px 15px; 
+  border-radius: 5px;
+}
+
+.container .row .carrinho {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  margin: 15px 15px;
+}
+
+.container .row .carrinho h3 {
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: 'Crimson Text', serif;
+  color: #5a5a5a;
+  font-weight: 600;
+}
+
+.container .row .final {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: rgb(149, 16, 172);
+  color: white;
+  border: 2px solid transparent;
+}
+.container .row .final:hover {
+  background-color: white;
+  border: 2px solid rgb(149, 16, 172);
+  color: rgb(149, 16, 172);
+  transition: 0.5s;
+}
+.container .row .final h4 {
+  margin: 0 auto;
+  padding: 15px 0;
+  font-family: 'Crimson Text', serif;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+
+
+
+
+
+/*  end */
 
 /*  Start ~> Open text*/
 

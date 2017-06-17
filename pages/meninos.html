@@ -33,6 +33,7 @@
     <!-- JavaScript and Angular -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   </head>
 
   <body ng-app="myApp">
@@ -94,53 +95,53 @@
     <div class="container" ng-controller="MainController" >
       <div class="row">
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="../{{ borboletaBege.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="../{{ borboletaBege.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ borboletaBege.name }}</p>
-          <p>R$ {{ borboletaBege.price }}</p>
+          <p class="price">R$ {{ borboletaBege.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="../{{ borboletaBranca.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="../{{ borboletaBranca.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ borboletaBranca.name }}</p>
-          <p>R$ {{ borboletaBranca.price }}</p>
+          <p class="price">R$ {{ borboletaBranca.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="../{{ borboletaAzul.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="../{{ borboletaAzul.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ borboletaAzul.name }}</p>
-          <p>R$ {{ borboletaAzul.price }}</p>
+          <p class="price">R$ {{ borboletaAzul.price }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="../{{ gravataAmarela.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="../{{ gravataAmarela.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataAmarela.name }}</p>
-          <p>R$ {{ gravataAmarela.price }}</p>
+          <p class="price">R$ {{ gravataAmarela.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ gravataAzulClara.page }}"><img ng-src="../{{ gravataAzulClara.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataAzulClara.page }}"><img ng-src="../{{ gravataAzulClara.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataAzulClara.name }}</p>
-          <p>R$ {{ gravataAzulClara.price }}</p>
+          <p class="price">R$ {{ gravataAzulClara.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="../{{ gravataListradaTorto.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="../{{ gravataListradaTorto.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataListradaTorto.name }}</p>
-          <p>R$ {{ gravataListradaTorto.price }}</p>
+          <p class="price">R$ {{ gravataListradaTorto.price }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ gravataVermelha.page }}"><img ng-src="../{{ gravataVermelha.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataVermelha.page }}"><img ng-src="../{{ gravataVermelha.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataVermelha.name }}</p>
-          <p>R$ {{ gravataVermelha.price }}</p>
+          <p class="price">R$ {{ gravataVermelha.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="../{{ gravataPreta.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="../{{ gravataPreta.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataPreta.name }}</p>
-          <p>R$ {{ gravataPreta.price }}</p>
+          <p class="price">R$ {{ gravataPreta.price }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ gravataListradaReto.page }}"><img ng-src="../{{ gravataListradaReto.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ gravataListradaReto.page }}"><img ng-src="../{{ gravataListradaReto.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataListradaReto.name }}</p>
-          <p>R$ {{ gravataListradaReto.price }}</p>
+          <p class="price">R$ {{ gravataListradaReto.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas pull-right">
@@ -158,9 +159,9 @@
 
     <div class="container" ng-controller="MainController">
         <div ng-repeat="product in suspensorios" class="col-md-4 col-sm-4">
-          <a ng-href="pages/{{ product.page }}"><img ng-src="../{{ product.cover }}" class="img-responsive"></a>
+          <a ng-href="pages/{{ product.page }}"><img ng-src="../{{ product.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ product.name }}</p>
-          <p>R$ {{ product.price }}</p>
+          <p class="price">R$ {{ product.price }}</p>
         </div>
       <div class="row text-center ver-todas pull-right">
         <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Topo </a>
@@ -176,7 +177,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/loginScript.js"></script>
 
     <!-- Modules -->
     <script src="../js/app.js"></script>

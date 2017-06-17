@@ -5,13 +5,17 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: rgb(209, 102, 227);
+  background-color: rgb(252, 193, 255);
+}
+li {
+  font-family: 'Merriweather Sans', sans-serif;
 }
 p {
   margin: 5px 0 5px;
   color: white;
   font-weight: 600;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(149, 16, 172);
 }
 h2 {
  font-family: 'Crimson Text', serif; 
@@ -20,18 +24,19 @@ h2 {
  margin: 0 auto;
  padding: 15px 0;
  text-align: center;
+ font-size: 34px;
 }
 h3 {
-  font-family: 'Crimson Text', serif; 
+  font-family: 'Merriweather Sans', sans-serif;
   color: rgb(149, 16, 172);
   font-weight: 600;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 h4 {
-  font-family: 'Crimson Text', serif; 
+  font-family: 'Merriweather Sans', sans-serif;
   color: rgb(149, 16, 172);
   font-weight: 600;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 15px 0;
   text-align: center;
 }
@@ -41,7 +46,26 @@ input {
 }
 button.btn-primary {
   margin-top: -5px;
+  background-color: rgb(149, 16, 172);
+  border: 1px solid transparent;
+  font-weight: 800;
 }
+button.btn-primary:focus {
+  background-color: rgb(149, 16, 172) !important;
+  border: 1px solid transparent !important;
+  opacity: 0.8 !important;
+}
+button.btn-primary:hover {
+  background-color: rgb(149, 16, 172) !important;
+  border: 1px solid transparent !important;
+  opacity: 0.8 !important;
+}
+button.btn-primary:active {
+  background-color: rgb(149, 16, 172) !important;
+  border: 1px solid transparent !important;
+  opacity: 0.8 !important;
+}
+
 .fa-plus-circle {
   margin-left: 30px;
   cursor: pointer;
@@ -56,11 +80,32 @@ button.btn-primary {
 }
 
 /*  name, quantidade, price */
-.container .col-md-6 .row .name, .container .col-md-6 .row .price, .container .col-md-6 .row .quantidade {
+.container .col-md-6 .row .name, .container .col-md-6 .row .style-price, .container .col-md-6 .row .quantidade, .container .col-md-6 .row .description {
   background-color: white;
   border-radius: 5px;
   margin: 5px auto;
 }
+
+/* carrinho */
+.container .col-md-6 .row .carrinho {
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid transparent;
+  color: rgb(149, 16, 172) !important;
+}
+.container .col-md-6 .row .carrinho:hover {
+  transition: 0.7s;
+  color: white !important;
+  background-color: rgb(149, 16, 172);
+}
+.container .col-md-6 .row .carrinho:hover h4 {
+  transition: 0.7s;
+  color: white !important;
+}
+
+
+/* */
 /*  color */
 .container .col-md-6 .row .quantidade span#color, .container .col-md-6 .row .quantidade span#colorTwo {
   padding: 4px 20px; 
@@ -99,7 +144,22 @@ button.btn-primary {
 .zoom img {
   display: block;
 }
+/* open text */
+.open-texts {
+  background-color: rgb(149, 16, 172);
+  margin-bottom: 20px;
+  line-height: auto;
+}
 
+.open-texts h4 {
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 550;
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {

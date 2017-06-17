@@ -4,14 +4,17 @@
 
 body {
   padding-bottom: 40px;
-  background-color: rgb(209, 102, 227);
+  background-color: rgb(252, 193, 255);
 }
 p {
     margin: 5px 0 5px;
     color: white;
     font-weight: 900;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
+}
+li {
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 
@@ -97,7 +100,11 @@ p {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  position: absolute;
+  bottom: 20% !important; 
+  padding-top: 15% !important;
 }
+
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -113,6 +120,19 @@ p {
   min-height: 100%;
 }
 
+.carousel h1, .carousel h2, .carousel h3 {
+  font-family: 'Crimson Text', serif;
+}
+.carousel h1 {
+  font-weight: 900;
+  font-size: 90px;
+  font-family: 'Sacramento', cursive;
+}
+.carousel h3 {
+  font-weight: 900;
+  font-size: 30px;
+}
+
 /* open texts */
 
 .open-texts {
@@ -125,9 +145,8 @@ p {
   margin: 0 auto;
   text-align: center;
   color: white;
-  font-weight: 550;
+  font-weight: 900;
   text-transform: uppercase;
-  /*font-family: 'Cormorant Infant', serif;*/
   font-family: 'Crimson Text', serif;
   font-size: 40px;
 }
@@ -148,6 +167,8 @@ p {
   background-color: rgb(149, 16, 172);
   border-radius: 5px;
   text-transform: uppercase;
+  font-family: 'Crimson Text', serif;
+
 }
 .container .row a.plus-section:hover {
   background-color: white;

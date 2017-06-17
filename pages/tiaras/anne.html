@@ -33,6 +33,8 @@
     <!-- JavaScript and Angular -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     
   </head>
 
@@ -89,59 +91,96 @@
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <span class='zoom' id='ex1'>
-            <img ng-src='../../{{anneOne.cover}}' alt='Tiara Anne. Produto disponível para pronta-entrega' class="img-responsive" id="big-picture" />
+            <img ng-src='../../{{anneOne.cover}}' alt='Tiara Anne. Produto disponível para pronta-entrega' class="img-responsive img-thumbnail" id="big-picture" />
           </span>
           <div class="col-md-3 col-xs-3  bottom-pics">
-            <img ng-src="../../{{anneOne.cover}}" class="img-responsive pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+            <img ng-src="../../{{anneOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
           </div>
           <div class="col-md-3 col-xs-3 bottom-pics">
-            <img ng-src="../../{{anneOne.coverTwo}}" class="img-responsive pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+            <img ng-src="../../{{anneOne.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
           </div>
           <div class="col-md-3 col-xs-3 bottom-pics">
-            <img ng-src="../../{{anneTwo.cover}}" class="img-responsive pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+            <img ng-src="../../{{anneTwo.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
           </div>
           <div class="col-md-3 col-xs-3 bottom-pics">
-            <img ng-src="../../{{anneTwo.coverTwo}}" class="img-responsive pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+            <img ng-src="../../{{anneTwo.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
           </div>
         </div>
 
         <div class="col-md-6 col-sm-6">
           <div class="row">
             <div class="col-md-12 col-sm-12 name">
-              <h2 class="text-center" >Tiara {{ anneOne.name }}</h2>
+              <h2 class="text-center" id="anneName">Tiara {{ anneOne.name }}</h2>
               <p id="test" style="display: none;"> {{ anneOne.color }}</p>
               <p id="testTwo" style="display: none;"> {{ anneTwo.color }}</p>
             </div>
           </div>
           <div class="row">
-              <div class="col-md-12 col-sm-12 price">
-                <h2 class="text-center">R$ {{ anneOne.price }}</h2>
+              <div class="col-md-12 col-sm-12 style-price">
+                <h2 class="text-center priceItem" id="annePrice">R$ {{ anneOne.price }}</h2>
+                <h4 class="text-center priceText" style="display: none;">Valores disponíveis apenas para clientes cadastrados.</h4> 
+                <h4 class="text-center priceText" style="display: none;">Faça seu <a href="../login.html" style="text-decoration: none; color: rgb(252, 193, 255);">login</a> ou <a href="../cadastro.html" style="text-decoration: none; color: rgb(252, 193, 255);">cadastre-se</a></h4>
               </div>
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12 quantidade">
               <h3>Cores disponíveis:</h3>
               <h4 class="text-left"> 
-                <span id="color"></span>Itens em estoque: 
-                <span id="number">{{ anneOne.quantidade }}</span> 
-                <i class="fa fa-plus-circle" aria-hidden="true" id="myPlusIcon"></i> 
-                <input type="number" name="quantidade" id="myInput"> 
-                <i class="fa fa-minus-circle" aria-hidden="true" id="myMinusIcon"></i>
-                <button class="btn btn-primary pull-right">Adicionar ao Carrinho <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                <span id="color"></span><span class="priceItem">Itens em estoque:</span> 
+                <span id="number" class="priceItem">{{ anneOne.quantidade }}</span> 
+                <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="myPlusIcon"></i> 
+                <input type="number" name="quantidade" id="myInput" class="priceItem"> 
+                <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="myMinusIcon"></i>
+                <button class="btn btn-primary pull-right" id="myCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
               </h4>
+              <p class="priceItem" id="itemAdd" style="color: black; display: none;">Item adicionado! :)</p>
               <h4 class="text-left">
-                <span id="colorTwo"></span>Itens em estoque: 
-                <span id="numberTwo">{{ anneTwo.quantidade }}</span> 
-                <i class="fa fa-plus-circle" aria-hidden="true" id="myPlusIconTwo"></i> 
-                <input type="number" name="quantidade" id="myInputTwo">
-                <i class="fa fa-minus-circle" aria-hidden="true" id="myMinusIconTwo"></i>
-                <button class="btn btn-primary pull-right">Adicionar ao Carrinho <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                <span id="colorTwo"></span><span class="priceItem">Itens em estoque:</span> 
+                <span id="numberTwo" class="priceItem">{{ anneTwo.quantidade }}</span> 
+                <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="myPlusIconTwo"></i> 
+                <input type="number" name="quantidade" id="myInputTwo" class="priceItem">
+                <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="myMinusIconTwo"></i>
+                <button class="btn btn-primary pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
               </h4>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 description">
+              <h3 class="">Descrição: </h3>
+              <p> {{ anneOne.description }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <a href="../carrinho.html"><div class="col-md-3 col-sm-3 pull-right carrinho">
+              <h4 class="text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Ver carrinho</h4>
+            </div></a>
           </div>
         </div>
       </div>
     </div><!-- /.container -->
+
+    <div class="container-fluid open-texts">
+      <div class="row">
+        <h4>Quem viu esse produto também comprou: </h4>
+      </div>
+    </div>
+
+    <div class="container" ng-controller="MainController">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{carolina.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{dani.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{deniseOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{giseleOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -153,7 +192,8 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <script src="../../js/script.js"></script>
-
+    <script src="../../js/loginScript.js"></script>
+    
     <!-- Modules -->
     <script src="../../js/app.js"></script>
 

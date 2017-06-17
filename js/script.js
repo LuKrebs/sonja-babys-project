@@ -1,30 +1,13 @@
 var main = function() {
 
-
-	/*var test = {
-		price: 10,
-		model: "Anne",
-		description: "bla bla bla"
-	};*/
-
-	/* $("#testLocalStorage").on('click', function () {
-		localStorage.setItem("testModel", test.model);
-		localStorage.setItem("testDescription", test.description);
-	});
-
-	$("#testDisplayModel").html(localStorage.getItem("testModel"));
-	$("#testDisplayDescription").html(localStorage.getItem("testDescription")); */
-
 	var color = $("#test").html();
 	var colorTwo = $("#testTwo").html();
-
-	var name = $("#").html();
 
 
 	var number = $("#number").html();
 	var numberTwo = $("#numberTwo").html();
 
-	
+	// Zoom and span background features
 	$('#ex1').zoom({magnify: 0.25});
 	$("#color").css('background-color', color);
 	$("#colorTwo").css('background-color', colorTwo);
@@ -36,46 +19,51 @@ var main = function() {
 		$("span.zoom").attr('id', "newZoom");
 		$("#newZoom").zoom({magnify: 0.25});
 	});
+	// End ~> Zoom and span background features
 
+	// Buttons couting
 	$("#myPlusIcon").on('click', function() {
 		var a = $("#myInput").val();
 		a = Number(a);
 		a += 1;
 		$("#myInput").val(a);
 	});
-
 	$("#myMinusIcon").on('click', function() {
 		var a = $("#myInput").val();
 		a = Number(a);
 		a -= 1;
 		$("#myInput").val(a);
 	});
-
 	$("#myPlusIconTwo").on('click', function() {
 		var a = $("#myInputTwo").val();
 		a = Number(a);
 		a += 1;
 		$("#myInputTwo").val(a);
 	});
-
 	$("#myMinusIconTwo").on('click', function() {
 		var a = $("#myInputTwo").val();
 		a = Number(a);
 		a -= 1;
 		$("#myInputTwo").val(a);
 	});
+	//End ~> Buttons counting
 
+
+	// Adding values to the Cart
 	$("#myCart").on('click', function() {
 		var quantidade = $("#myInput").val();
+		var name = $("#anneName").html();
+		var price = $("#annePrice").html();
+		var photo = $("#big-picture").attr('src');
 
-		if (quantidade > 0 && number > 0) {
-			var item = {};
-			item.quantidade = quantidade;
-			localStorage.setItem("quantidade", quantidade);
-			$("#testQuantidade").html(localStorage.getItem("quantidade"));
-		};
+		if (quantidade > 0) {
+			$("#itemAdd").css('display', 'inline');
+		}
+
+		var anneOneString = name + "- " + price + "- " + quantidade + "- " + color + "- " + photo;
+		localStorage.setItem("anneOne", anneOneString);
 	});
-
+	// End ~> Adding values to the cart
 };
 
 
