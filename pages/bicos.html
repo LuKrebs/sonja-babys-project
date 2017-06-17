@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../img/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Bicos de Pato | Sonja Baby's</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-full-page.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -49,19 +49,27 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo1.png" class="img-responsive"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="tiaras.html">Tiaras</a></li>
+                <li><a href="bicos.html">Bicos de Pato</a></li>
+                <li><a href="calcinhas.html">Calcinhas</a></li>
+                <li class="dropdown especial">
+                  <a href="pages/meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="pages/meninos.html#gravatas">Gravatas</a></li>
+                    <li><a href="pages/meninos.html#suspensorios">Suspensórios</a></li>
+                  </ul>
+                </li>
+                <li><a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
+                <li><a href="info.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="login.html">Login</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Nav header</li>
                     <li><a href="#">Separated link</a></li>
@@ -76,14 +84,23 @@
       </div>
     </div>
 
-    <div class="container" ng-controller="MainController">
-
-      <div class="starter-template">
-        <h1 id="testDisplayModel">Bootstrap starter template</h1>
-        <p class="lead" id="testDisplayDescription">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <div class="container-fluid open-texts">
+      <div class="row">
+        <h3>bicos de pato</h3>        
       </div>
+    </div>
 
-    </div><!-- /.container -->
+
+    <div class="container" ng-controller="MainController">
+        <div ng-repeat="product in bicos" class="col-md-3">
+          <a ng-href="pages/{{ product.page }}"><img ng-src="../{{ product.cover }}" class="img-responsive"></a>
+          <p> {{ product.name }}</p>
+          <p>R$ {{ product.price }}</p>
+        </div>
+      <div class="row text-center ver-todas pull-right">
+        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Topo </a>
+      </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript

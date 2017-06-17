@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Sonja Baby's</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -54,18 +55,19 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Início</a></li>
-                <li><a href="tiaras.html">Tiaras</a></li>
-                <li><a href="bicos.html">Bicos de Pato</a></li>
-                <li><a href="calcinha.html">Calcinhas</a></li>
+                <li><a href="pages/tiaras.html">Tiaras</a></li>
+                <li><a href="pages/bicos.html">Bicos de Pato</a></li>
+                <li><a href="pages/calcinhas.html">Calcinhas</a></li>
+                <li><a href="pages/sapatinhos.html">Sapatinhos</a></li>
                 <li class="dropdown especial">
-                  <a href="meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                  <a href="pages/meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="gravatas.html">Gravatas</a></li>
-                    <li><a href="suspensorios.html">Suspensórios</a></li>
+                    <li><a href="pages/meninos.html#gravatas">Gravatas</a></li>
+                    <li><a href="pages/meninos.html#suspensorios">Suspensórios</a></li>
                   </ul>
                 </li>
-                <li><a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
+                <li><a href="pages/carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
+                <li><a href="pages/info.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -90,11 +92,11 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="img/abertura.jpg" alt="First slide">
+          <img class="first-slide" src="img/abertura2.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Sonja Acessórios</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
@@ -115,41 +117,51 @@
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-4">
-          <a ng-href="pages/{{ anneOne.page }}"><img ng-src="{{ anneOne.cover }}" class="img-responsive"></a>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ anneOne.page }}"><img ng-src="{{ anneOne.cover }}" class="img-responsive"></a>
           <p> {{ anneOne.name }}</p>
           <p>R$ {{ anneOne.price }}</p>
         </div>
-        <div class="col-md-4">
-          <a ng-href="pages/{{ carolina.page }}"><img ng-src="{{ carolina.cover }}" class="img-responsive"></a>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ carolina.page }}"><img ng-src="{{ carolina.cover }}" class="img-responsive"></a>
           <p> {{ carolina.name }}</p>
           <p>R$ {{ carolina.price }}</p>
         </div>
-        <div class="col-md-4">
-          <a ng-href="pages/{{ dani.page }}"><img ng-src="{{ dani.cover }}" class="img-responsive"></a>
-          <p>Tiara {{ dani.name }}</p>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ dani.page }}"><img ng-src="{{ dani.cover }}" class="img-responsive"></a>
+          <p> {{ dani.name }}</p>
           <p>R$ {{ dani.price }}</p>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ mell.page }}"><img ng-src="{{ mell.cover }}" class="img-responsive"></a>
+          <p> {{ mell.name }}</p>
+          <p>R$ {{ mell.price }}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <a ng-href="pages/{{ deniseOne.page }}"><img ng-src="{{ deniseOne.cover }}" class="img-responsive"></a>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ deniseOne.page }}"><img ng-src="{{ deniseOne.cover }}" class="img-responsive"></a>
           <p> {{ deniseOne.name }}</p>
           <p>R$ {{ deniseOne.price }}</p>
         </div>
-        <div class="col-md-4">
-          <a ng-href="pages/{{ giseleOne.page }}"><img ng-src="{{ giseleOne.cover }}" class="img-responsive"></a>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ giseleOne.page }}"><img ng-src="{{ giseleOne.cover }}" class="img-responsive"></a>
           <p> {{ giseleOne.name }}</p>
           <p>R$ {{ giseleOne.price }}</p>
         </div>
-        <div class="col-md-4">
-          <a ng-href="pages/{{ helenaOne.page }}"><img ng-src="{{ helenaOne.cover }}" class="img-responsive"></a>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ helenaOne.page }}"><img ng-src="{{ helenaOne.cover }}" class="img-responsive"></a>
           <p> {{ helenaOne.name }}</p>
           <p>R$ {{ helenaOne.price }}</p>
         </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/tiaras/{{ luciaTwo.page }}"><img ng-src="{{ luciaTwo.cover }}" class="img-responsive"></a>
+          <p> {{ luciaTwo.name }}</p>
+          <p>R$ {{ luciaTwo.price }}</p>
+        </div>
       </div>
       <div class="row text-center ver-todas">
-        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todas </a>
+        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
       </div>
     </div>
 
@@ -159,41 +171,51 @@
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3  col-sm-3 col-xs-3">
           <a ng-href="pages/{{ esmeralda.page }}"><img ng-src="{{ esmeralda.cover }}" class="img-responsive"></a>
           <p>{{ esmeralda.name }}</p>
           <p>R$ {{ esmeralda.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="pages/{{ jadeOne.page }}"><img ng-src="{{ jadeOne.cover }}" class="img-responsive"></a>
           <p>{{ jadeOne.name }}</p>
           <p>R$ {{ jadeOne.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="pages/{{ onix.page }}"><img ng-src="{{ onix.cover }}" class="img-responsive"></a>
           <p> {{ onix.name }}</p>
           <p>R$ {{ onix.price }}</p>
         </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/{{ safiraTwo.page }}"><img ng-src="{{ safiraTwo.cover }}" class="img-responsive"></a>
+          <p> {{ safiraTwo.name }}</p>
+          <p>R$ {{ safiraTwo.price }}</p>
+        </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="pages/{{ rubi.page }}"><img ng-src="{{ rubi.cover }}" class="img-responsive"></a>
           <p>{{ rubi.name }}</p>
           <p>R$ {{ rubi.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="pages/{{ safiraOne.page }}"><img ng-src="{{ safiraOne.cover }}" class="img-responsive"></a>
           <p>{{ safiraOne.name }}</p>
           <p>R$ {{ safiraOne.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="pages/{{ topazio.page }}"><img ng-src="{{ topazio.cover }}" class="img-responsive"></a>
           <p>{{ topazio.name }}</p>
           <p>R$ {{ topazio.price }}</p>
         </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="pages/{{ jadeTwo.page }}"><img ng-src="{{ jadeTwo.cover }}" class="img-responsive"></a>
+          <p> {{ jadeTwo.name }}</p>
+          <p>R$ {{ jadeTwo.price }}</p>
+        </div>
       </div>
       <div class="row text-center ver-todas">
-        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
+        <a href="pages/bicos.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
       </div>
     </div>
 
@@ -203,19 +225,19 @@
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-6">
           <a ng-href="pages/{{ calcinhaOne.page }}"><img ng-src="{{ calcinhaOne.cover }}" class="img-responsive"></a>
           <p>{{ calcinhaOne.name }}</p>
           <p>R$ {{ calcinhaOne.price }}</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-6">
           <a ng-href="pages/{{ calcinhaTwo.page }}"><img ng-src="{{ calcinhaTwo.cover }}" class="img-responsive"></a>
           <p>{{ calcinhaTwo.name }}</p>
           <p>R$ {{ calcinhaTwo.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
-        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todas </a>
+        <a href="pages/calcinhas.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
       </div>
     </div>
 
@@ -225,94 +247,94 @@
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ delicado.page }}"><img ng-src="{{ delicado.cover }}" class="img-responsive"></a>
           <p>{{ delicado.name }}</p>
           <p>R$ {{ delicado.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ fashion.page }}"><img ng-src="{{ fashion.cover }}" class="img-responsive"></a>
           <p>{{ fashion.name }}</p>
           <p>R$ {{ fashion.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ ternura.page }}"><img ng-src="{{ ternura.cover }}" class="img-responsive"></a>
           <p>{{ ternura.name }}</p>
           <p>R$ {{ ternura.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
-        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
+        <a href="pages/sapatinhos.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
       </div>
     </div>
 
-    <div class="container-fluid open-texts" id="sapatinhos">
+    <div class="container-fluid open-texts" id="gravatas">
       <h3>gravatas</h3>
     </div>
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="{{ gravataAmarela.cover }}" class="img-responsive"></a>
           <p>{{ gravataAmarela.name }}</p>
           <p>R$ {{ gravataAmarela.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="{{ gravataListradaTorto.cover }}" class="img-responsive"></a>
           <p>{{ gravataListradaTorto.name }}</p>
           <p>R$ {{ gravataListradaTorto.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="{{ gravataPreta.cover }}" class="img-responsive"></a>
           <p>{{ gravataPreta.name }}</p>
           <p>R$ {{ gravataPreta.price }}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="{{ borboletaBege.cover }}" class="img-responsive"></a>
           <p>{{ borboletaBege.name }}</p>
           <p>R$ {{ borboletaBege.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="{{ borboletaBranca.cover }}" class="img-responsive"></a>
           <p>{{ borboletaBranca.name }}</p>
           <p>R$ {{ borboletaBranca.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="{{ borboletaAzul.cover }}" class="img-responsive"></a>
           <p>{{ borboletaAzul.name }}</p>
           <p>R$ {{ borboletaAzul.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
-        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todas </a>
+        <a href="pages/meninos.html#gravatas" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
       </div>
     </div>
-    <div class="container-fluid open-texts" id="sapatinhos">
+    <div class="container-fluid open-texts" id="suspensorios">
       <h3>suspensórios</h3>
     </div>
 
     <div class="container" ng-controller="MainController">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ suspensorioBege.page }}"><img ng-src="{{ suspensorioBege.cover }}" class="img-responsive"></a>
           <p>{{ suspensorioBege.name }}</p>
           <p>R$ {{ suspensorioBege.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ suspensorioPreto.page }}"><img ng-src="{{ suspensorioPreto.cover }}" class="img-responsive"></a>
           <p>{{ suspensorioPreto.name }}</p>
           <p>R$ {{ suspensorioPreto.price }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
           <a ng-href="pages/{{ suspensorioAzul.page }}"><img ng-src="{{ suspensorioAzul.cover }}" class="img-responsive"></a>
           <p>{{ suspensorioAzul.name }}</p>
           <p>R$ {{ suspensorioAzul.price }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas">
-        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
+        <a href="pages/meninos.html#suspensorios" class="plus-section"><i class="fa fa-plus-circle" aria-hidden="true"></i>ver todos </a>
       </div>
     </div>
 

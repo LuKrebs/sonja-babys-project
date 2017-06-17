@@ -8,98 +8,15 @@ body {
   background-color: rgb(209, 102, 227);
 }
 p {
-  margin: 5px 0 5px;
-  color: white;
-  font-weight: 600;
-  font-family: 'Crimson Text', serif;
-}
-h2 {
- font-family: 'Crimson Text', serif; 
- color: rgb(149, 16, 172);
- font-weight: 600;
- margin: 0 auto;
- padding: 15px 0;
- text-align: center;
-}
-h3 {
-  font-family: 'Crimson Text', serif; 
-  color: rgb(149, 16, 172);
-  font-weight: 600;
-  margin: 0 auto;
-}
-h4 {
-  font-family: 'Crimson Text', serif; 
-  color: rgb(149, 16, 172);
-  font-weight: 600;
-  margin: 0 auto;
-  padding: 15px 0;
-  text-align: center;
+    margin: 5px 0 5px;
+    color: white;
+    font-weight: 600;
 }
 
-input {
-  width: 40px;
-}
-button.btn-primary {
-  margin-top: -5px;
-}
-.fa-plus-circle {
-  margin-left: 30px;
-  cursor: pointer;
-}
-.fa-minus-circle {
-  cursor: pointer;
-}
 
-/*  primeiro */
-.primeiro {
-  margin: 100px auto;
-}
 
-/*  name, quantidade, price */
-.container .col-md-6 .row .name, .container .col-md-6 .row .price, .container .col-md-6 .row .quantidade {
-  background-color: white;
-  border-radius: 5px;
-  margin: 5px auto;
-}
-/*  color */
-.container .col-md-6 .row .quantidade span#color, .container .col-md-6 .row .quantidade span#colorTwo {
-  padding: 4px 20px; 
-  margin-right: 10px; 
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/*  bottom-pics */
-.bottom-pics {
-  margin-top: 15px;
-  padding: 0 5px;
-}
-.bottom-pics img:hover {
-  cursor: pointer;
-}
-
-/*  zoom */
-.zoom {
-  display:inline-block;
-  position: relative;
-}
-
-/* magnifying glass icon */
-.zoom:after {
-  content:'';
-  display:block; 
-  width:33px; 
-  height:33px; 
-  position:absolute; 
-  top:0;
-  right:0;
-  background:url(../../img/icon.png);
-}
-
-.zoom img {
-  display: block;
-}
-
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -171,9 +88,49 @@ button.btn-primary {
 
 /* End ~> Navbar */
 
+/*  Start ~> Open text*/
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+.open-texts {
+  background-color: rgb(149, 16, 172);
+  margin: 100px 0 30px 0;
+}
+.open-texts h3 {
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 550;
+  text-transform: uppercase;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 40px;
+}
+
+/*  End ~> Open text*/
+
+/*  pics ~> Start */
+
+.container .ver-todas {
+  margin: 30px 0;
+}
+.container .row a.plus-section {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 3px 15px;
+  color: white;
+  background-color: rgb(149, 16, 172);
+  border-radius: 5px;
+}
+.container .row a.plus-section:hover {
+  background-color: white;
+  color: rgb(149, 16, 172);
+  transition: 0.6s;
+}
+.container .row i.fa-arrow-circle-up {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/*  pics ~> End */
 
 @media (max-width: 1115px) {
   .navbar-header {

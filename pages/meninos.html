@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/favicon.ico">
+
+    <title>Sapatinhos | Sonja Baby's</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style-full-page.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- JavaScript and Angular -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo1.png" class="img-responsive"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="tiaras.html">Tiaras</a></li>
+                <li><a href="bicos.html">Bicos de Pato</a></li>
+                <li><a href="calcinhas.html">Calcinhas</a></li>
+                <li class="dropdown especial">
+                  <a href="pages/meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="pages/meninos.html#gravatas">Gravatas</a></li>
+                    <li><a href="pages/meninos.html#suspensorios">Suspensórios</a></li>
+                  </ul>
+                </li>
+                <li><a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
+                <li><a href="info.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="login.html">Login</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="container-fluid open-texts" id="gravatas">
+      <div class="row">
+        <h3>gravatas</h3>        
+      </div>
+    </div>
+
+
+    <div class="container" ng-controller="MainController" >
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="../{{ borboletaBege.cover }}" class="img-responsive"></a>
+          <p> {{ borboletaBege.name }}</p>
+          <p>R$ {{ borboletaBege.price }}</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="../{{ borboletaBranca.cover }}" class="img-responsive"></a>
+          <p> {{ borboletaBranca.name }}</p>
+          <p>R$ {{ borboletaBranca.price }}</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="../{{ borboletaAzul.cover }}" class="img-responsive"></a>
+          <p> {{ borboletaAzul.name }}</p>
+          <p>R$ {{ borboletaAzul.price }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="../{{ gravataAmarela.cover }}" class="img-responsive"></a>
+          <p> {{ gravataAmarela.name }}</p>
+          <p>R$ {{ gravataAmarela.price }}</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ gravataAzulClara.page }}"><img ng-src="../{{ gravataAzulClara.cover }}" class="img-responsive"></a>
+          <p> {{ gravataAzulClara.name }}</p>
+          <p>R$ {{ gravataAzulClara.price }}</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="../{{ gravataListradaTorto.cover }}" class="img-responsive"></a>
+          <p> {{ gravataListradaTorto.name }}</p>
+          <p>R$ {{ gravataListradaTorto.price }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ gravataVermelha.page }}"><img ng-src="../{{ gravataVermelha.cover }}" class="img-responsive"></a>
+          <p> {{ gravataVermelha.name }}</p>
+          <p>R$ {{ gravataVermelha.price }}</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="../{{ gravataPreta.cover }}" class="img-responsive"></a>
+          <p> {{ gravataPreta.name }}</p>
+          <p>R$ {{ gravataPreta.price }}</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ gravataListradaReto.page }}"><img ng-src="../{{ gravataListradaReto.cover }}" class="img-responsive"></a>
+          <p> {{ gravataListradaReto.name }}</p>
+          <p>R$ {{ gravataListradaReto.price }}</p>
+        </div>
+      </div>
+      <div class="row text-center ver-todas pull-right">
+        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Topo </a>
+      </div>
+    </div>
+
+
+    <div class="container-fluid open-texts" id="suspensorios">
+      <div class="row">
+        <h3>suspensórios</h3>        
+      </div>
+    </div>
+
+
+    <div class="container" ng-controller="MainController">
+        <div ng-repeat="product in suspensorios" class="col-md-4 col-sm-4">
+          <a ng-href="pages/{{ product.page }}"><img ng-src="../{{ product.cover }}" class="img-responsive"></a>
+          <p> {{ product.name }}</p>
+          <p>R$ {{ product.price }}</p>
+        </div>
+      <div class="row text-center ver-todas pull-right">
+        <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Topo </a>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/script.js"></script>
+
+    <!-- Modules -->
+    <script src="../js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="../js/controllers/MainController.js"></script>
+  </body>
+</html>
