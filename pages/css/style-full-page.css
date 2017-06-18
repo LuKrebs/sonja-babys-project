@@ -4,14 +4,14 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
   background-color: rgb(252, 193, 255);
 }
 p {
     margin: 5px 0 5px;
     color: white;
-    font-weight: 600;
     font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
 }
 li {
   font-family: 'Merriweather Sans', sans-serif;
@@ -69,6 +69,9 @@ li {
     background-color: rgb(149, 16, 172);
     transition: 0.5s;
 }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: white;
+}
 .navbar-inverse .navbar-nav>li.especial>a:focus, .navbar-inverse .navbar-nav>li.especial>a:hover {
     color: #fff;
     background-color: rgb(5, 180, 245);
@@ -77,6 +80,10 @@ li {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: rgb(149, 16, 172);
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: rgb(149, 16, 172); 
 }
 .navbar-inverse .navbar-toggle {
   background-color: rgb(149, 16, 172);
@@ -89,6 +96,7 @@ li {
     color: rgb(149, 16, 172);
     background-color: #fff;
 }
+
 
 /* End ~> Navbar */
 
@@ -136,7 +144,7 @@ li {
 
 /*  pics ~> End */
 
-@media (max-width: 1115px) {
+@media (max-width: 990px) {
   .navbar-header {
       float: none;
   }
@@ -173,10 +181,6 @@ li {
   }
 }
 
-
-
-
-
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -196,4 +200,26 @@ li {
     border-radius: 4px;
   }
 
+}
+
+@media (min-width: 50px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: rgb(149, 16, 172);
+    background-color: white;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:active {
+    background-color: rgb(149, 16, 172);
+    color: white;
+    transition: 0.5s;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li.especial>a, .navbar-inverse .navbar-nav .open .dropdown-menu>li.especial>a, .navbar-inverse .navbar-nav .open .dropdown-menu>li.especial>a {
+    color: rgb(5, 180, 245);
+    background-color: white !important;
+    transition: 0.5s;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li.especial>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li.especial>a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu>li.especial>a:active {
+    color: #fff;
+    background-color: rgb(5, 180, 245) !important;
+    transition: 0.5s;
+  }
 }

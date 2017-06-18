@@ -37,7 +37,7 @@ h4 {
   color: rgb(149, 16, 172);
   font-weight: 600;
   margin: 5px auto;
-  padding: 15px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -106,6 +106,17 @@ button.btn-primary:active {
 
 
 /* */
+
+/*  priceText */
+
+.priceText a {
+  color: rgb(252, 193, 255);
+  font-weight: 900;
+  text-decoration: none;
+}
+.priceText a:hover {
+  text-decoration: underline;
+}
 /*  color */
 .container .col-md-6 .row .quantidade span#color, .container .col-md-6 .row .quantidade span#colorTwo {
   padding: 4px 20px; 
