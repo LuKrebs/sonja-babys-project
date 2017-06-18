@@ -39,10 +39,11 @@ var carrinho = function() {
 		$(".remove").on('click', function() {
 			$("#anneOne").remove();
 			localStorage.setItem("anneOne", "");
+			totalPrice -= subtotal;
+			$("#valorTotal").html("Valor total: R$ " + totalPrice);
 		});
+		$("#valorTotal").html("Valor total: R$ " + totalPrice);
 	}
-
-	$("#valorTotal").html("Valor total: R$ " + totalPrice);
 };
 
 

@@ -40,6 +40,7 @@ li {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 15px;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
@@ -159,7 +160,7 @@ li {
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   }
   .navbar-fixed-top {
-      top: 0;
+      /*top: 20px;*/
       border-width: 0 0 1px;
   }
   .navbar-collapse.collapse {
@@ -184,7 +185,7 @@ li {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    /*margin-top: 15px;*/
   }
   .navbar-wrapper .container {
     padding-right: 15px;
