@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   </head>
 
   <body ng-app="myApp">
@@ -54,27 +56,38 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="tiaras.html">Tiaras</a></li>
-                <li><a href="bicos.html">Bicos de Pato</a></li>
-                <li><a href="calcinhas.html">Calcinhas</a></li>
-                <li class="dropdown especial">
-                  <a href="pages/meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+                <li class="dropdown">
+                  <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feminino <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="pages/meninos.html#gravatas">Gravatas</a></li>
-                    <li><a href="pages/meninos.html#suspensorios">Suspensórios</a></li>
+                    <li><a href="tiaras.html">Tiaras</a></li>
+                    <li><a href="bicos.html">Bicos de Pato</a></li>
+                    <li><a href="calcinhas.html">Calcinhas</a></li>
+                    <li><a href="sapatinhos.html">Sapatinhos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown especial">
+                  <a href="meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="especial"><a href="meninos.html#gravatas" >Gravatas</a></li>
+                    <li class="especial"><a href="meninos.html#suspensorios" >Suspensórios</a></li>
                   </ul>
                 </li>
                 <li><a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
-                <li><a href="info.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="info/entenda.html">Como nosso site funciona?</a></li>
+                    <li><a href="info/entrega.html">Política de entrega</a></li>
+                    <li><a href="info/sobrenos.html">Sobre nós</a></li>
+                    <li><a href="info/dicas.html">Dicas para os lojistas</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="login.html">Login</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
                   </ul>
                 </li>
               </ul>
@@ -97,51 +110,51 @@
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ borboletaBege.page }}"><img ng-src="../{{ borboletaBege.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ borboletaBege.name }}</p>
-          <p class="price">R$ {{ borboletaBege.price }}</p>
+          <p class="price">R{{ borboletaBege.price | currency }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ borboletaBranca.page }}"><img ng-src="../{{ borboletaBranca.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ borboletaBranca.name }}</p>
-          <p class="price">R$ {{ borboletaBranca.price }}</p>
+          <p class="price">R{{ borboletaBranca.price | currency }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ borboletaAzul.page }}"><img ng-src="../{{ borboletaAzul.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ borboletaAzul.name }}</p>
-          <p class="price">R$ {{ borboletaAzul.price }}</p>
+          <p class="price">R{{ borboletaAzul.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ gravataAmarela.page }}"><img ng-src="../{{ gravataAmarela.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataAmarela.name }}</p>
-          <p class="price">R$ {{ gravataAmarela.price }}</p>
+          <p class="price">R{{ gravataAmarela.price | currency }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ gravataAzulClara.page }}"><img ng-src="../{{ gravataAzulClara.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataAzulClara.name }}</p>
-          <p class="price">R$ {{ gravataAzulClara.price }}</p>
+          <p class="price">R{{ gravataAzulClara.price | currency }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ gravataListradaTorto.page }}"><img ng-src="../{{ gravataListradaTorto.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataListradaTorto.name }}</p>
-          <p class="price">R$ {{ gravataListradaTorto.price }}</p>
+          <p class="price">R{{ gravataListradaTorto.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ gravataVermelha.page }}"><img ng-src="../{{ gravataVermelha.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataVermelha.name }}</p>
-          <p class="price">R$ {{ gravataVermelha.price }}</p>
+          <p class="price">R{{ gravataVermelha.price | currency }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ gravataPreta.page }}"><img ng-src="../{{ gravataPreta.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataPreta.name }}</p>
-          <p class="price">R$ {{ gravataPreta.price }}</p>
+          <p class="price">R{{ gravataPreta.price | currency }}</p>
         </div>
         <div class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ gravataListradaReto.page }}"><img ng-src="../{{ gravataListradaReto.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ gravataListradaReto.name }}</p>
-          <p class="price">R$ {{ gravataListradaReto.price }}</p>
+          <p class="price">R{{ gravataListradaReto.price | currency }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas pull-right">
@@ -161,7 +174,7 @@
         <div ng-repeat="product in suspensorios" class="col-md-4 col-sm-4">
           <a ng-href="pages/{{ product.page }}"><img ng-src="../{{ product.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ product.name }}</p>
-          <p class="price">R$ {{ product.price }}</p>
+          <p class="price">R{{ product.price | currency }}</p>
         </div>
       <div class="row text-center ver-todas pull-right">
         <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Topo </a>

@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   </head>
 
@@ -51,7 +52,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><img src="../img/logo1.png" class="img-responsive"></a>
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo1.png" class="img-responsive"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -72,7 +73,7 @@
                     <li class="especial"><a href="meninos.html#suspensorios" >Suspensórios</a></li>
                   </ul>
                 </li>
-                <li><a href="pages/carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
+                <li><a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -80,7 +81,6 @@
                     <li><a href="info/entrega.html">Política de entrega</a></li>
                     <li><a href="info/sobrenos.html">Sobre nós</a></li>
                     <li><a href="info/dicas.html">Dicas para os lojistas</a></li>
-                    <li><a href="info/representante.html">Seja nosso representante</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -109,7 +109,7 @@
         <div ng-repeat="product in bicos" class="col-md-3">
           <a ng-href="pages/{{ product.page }}"><img ng-src="../{{ product.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ product.name }}</p>
-          <p class="price">R$ {{ product.price }}</p>
+          <p class="price">R{{ product.price | currency }}</p>
         </div>
       <div class="row text-center ver-todas pull-right">
         <a href="pages/tiaras.html" class="plus-section"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Topo </a>

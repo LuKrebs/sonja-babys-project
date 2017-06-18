@@ -55,27 +55,38 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="tiaras.html">Tiaras</a></li>
-                <li><a href="bicos.html">Bicos de Pato</a></li>
-                <li><a href="calcinhas.html">Calcinhas</a></li>
-                <li class="dropdown especial">
-                  <a href="pages/meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+                <li class="dropdown">
+                  <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feminino <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="meninos.html#gravatas">Gravatas</a></li>
-                    <li><a href="meninos.html#suspensorios">Suspensórios</a></li>
+                    <li><a href="tiaras.html">Tiaras</a></li>
+                    <li><a href="bicos.html">Bicos de Pato</a></li>
+                    <li><a href="calcinhas.html">Calcinhas</a></li>
+                    <li><a href="sapatinhos.html">Sapatinhos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown especial">
+                  <a href="meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="especial"><a href="meninos.html#gravatas" >Gravatas</a></li>
+                    <li class="especial"><a href="meninos.html#suspensorios" >Suspensórios</a></li>
                   </ul>
                 </li>
                 <li><a href="carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
-                <li><a href="info.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="info/entenda.html">Como nosso site funciona?</a></li>
+                    <li><a href="info/entrega.html">Política de entrega</a></li>
+                    <li><a href="info/sobrenos.html">Sobre nós</a></li>
+                    <li><a href="info/dicas.html">Dicas para os lojistas</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="login.html">Login</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
                   </ul>
                 </li>
               </ul>
@@ -97,161 +108,161 @@
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ anneOne.page }}"><img ng-src="../{{ anneOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ anneOne.name }}</p>
-          <p class="price">R$ {{ anneOne.price }}</p>
+          <p class="price">R{{ anneOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ anneTwo.page }}"><img ng-src="../{{ anneTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ anneTwo.name }}</p>
-          <p class="price">R$ {{ anneTwo.price }}</p>
+          <p class="price">R{{ anneTwo.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ carolina.page }}"><img ng-src="../{{ carolina.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ carolina.name }}</p>
-          <p class="price">R$ {{ carolina.price }}</p>
+          <p class="price">R{{ carolina.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ dani.page }}"><img ng-src="../{{ dani.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ dani.name }}</p>
-          <p class="price">R$ {{ dani.price }}</p>
+          <p class="price">R{{ dani.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ deniseOne.page }}"><img ng-src="../{{ deniseOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ deniseOne.name }}</p>
-          <p class="price">R$ {{ deniseOne.price }}</p>
+          <p class="price">R{{ deniseOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ deniseTwo.page }}"><img ng-src="../{{ deniseTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ deniseTwo.name }}</p>
-          <p class="price">R$ {{ deniseTwo.price }}</p>
+          <p class="price">R{{ deniseTwo.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ giseleOne.page }}"><img ng-src="../{{ giseleOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ giseleOne.name }}</p>
-          <p class="price">R$ {{ giseleOne.price }}</p>
+          <p class="price">R{{ giseleOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ giseleTwo.page }}"><img ng-src="../{{ giseleTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ giseleTwo.name }}</p>
-          <p class="price">R$ {{ giseleTwo.price }}</p>
+          <p class="price">R{{ giseleTwo.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ helenaOne.page }}"><img ng-src="../{{ helenaOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ helenaOne.name }}</p>
-          <p class="price">R$ {{ helenaOne.price }}</p>
+          <p class="price">R{{ helenaOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ helenaTwo.page }}"><img ng-src="../{{ helenaTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ helenaTwo.name }}</p>
-          <p class="price">R$ {{ helenaTwo.price }}</p>
+          <p class="price">R{{ helenaTwo.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ jaciraOne.page }}"><img ng-src="../{{ jaciraOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ jaciraOne.name }}</p>
-          <p class="price">R$ {{ jaciraOne.price }}</p>
+          <p class="price">R{{ jaciraOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ jaciraTwo.page }}"><img ng-src="../{{ jaciraTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ jaciraTwo.name }}</p>
-          <p class="price">R$ {{ jaciraTwo.price }}</p>
+          <p class="price">R{{ jaciraTwo.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ lara.page }}"><img ng-src="../{{ lara.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ lara.name }}</p>
-          <p class="price">R$ {{ lara.price }}</p>
+          <p class="price">R{{ lara.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ larissa.page }}"><img ng-src="../{{ larissa.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ larissa.name }}</p>
-          <p class="price">R$ {{ larissa.price }}</p>
+          <p class="price">R{{ larissa.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ lizeOne.page }}"><img ng-src="../{{ lizeOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ lizeOne.name }}</p>
-          <p class="price">R$ {{ lizeOne.price }}</p>
+          <p class="price">R{{ lizeOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ lizeTwo.page }}"><img ng-src="../{{ lizeTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ lizeTwo.name }}</p>
-          <p class="price">R$ {{ lizeTwo.price }}</p>
+          <p class="price">R{{ lizeTwo.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ luana.page }}"><img ng-src="../{{ luana.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ luana.name }}</p>
-          <p class="price">R$ {{ luana.price }}</p>
+          <p class="price">R{{ luana.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ luciaOne.page }}"><img ng-src="../{{ luciaOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ luciaOne.name }}</p>
-          <p class="price">R$ {{ luciaOne.price }}</p>
+          <p class="price">R{{ luciaOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ luciaTwo.page }}"><img ng-src="../{{ luciaTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ luciaTwo.name }}</p>
-          <p class="price">R$ {{ luciaTwo.price }}</p>
+          <p class="price">R{{ luciaTwo.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ luciaThree.page }}"><img ng-src="../{{ luciaThree.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ luciaThree.name }}</p>
-          <p class="price">R$ {{ luciaThree.price }}</p>
+          <p class="price">R{{ luciaThree.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ luciane.page }}"><img ng-src="../{{ luciane.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ luciane.name }}</p>
-          <p class="price">R$ {{ luciane.price }}</p>
+          <p class="price">R{{ luciane.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ lucila.page }}"><img ng-src="../{{ lucila.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ lucila.name }}</p>
-          <p class="price">R$ {{ lucila.price }}</p>
+          <p class="price">R{{ lucila.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ mariana.page }}"><img ng-src="../{{ mariana.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ mariana.name }}</p>
-          <p class="price">R$ {{ mariana.price }}</p>
+          <p class="price">R{{ mariana.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ mell.page }}"><img ng-src="../{{ mell.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ mell.name }}</p>
-          <p class="price">R$ {{ mell.price }}</p>
+          <p class="price">R{{ mell.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ morena.page }}"><img ng-src="../{{ morena.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ morena.name }}</p>
-          <p class="price">R$ {{ morena.price }}</p>
+          <p class="price">R{{ morena.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ roseOne.page }}"><img ng-src="../{{ roseOne.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ roseOne.name }}</p>
-          <p class="price">R$ {{ roseOne.price }}</p>
+          <p class="price">R{{ roseOne.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ roseTwo.page }}"><img ng-src="../{{ roseTwo.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ roseTwo.name }}</p>
-          <p class="price">R$ {{ roseTwo.price }}</p>
+          <p class="price">R{{ roseTwo.price | currency }}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ sofia.page }}"><img ng-src="../{{ sofia.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ sofia.name }}</p>
-          <p class="price">R$ {{ sofia.price }}</p>
+          <p class="price">R{{ sofia.price | currency }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
           <a ng-href="tiaras/{{ yasmin.page }}"><img ng-src="../{{ yasmin.cover }}" class="img-responsive img-thumbnail"></a>
           <p> {{ yasmin.name }}</p>
-          <p class="price">R$ {{ yasmin.price }}</p>
+          <p class="price">R{{ yasmin.price | currency }}</p>
         </div>
       </div>
       <div class="row text-center ver-todas pull-right">

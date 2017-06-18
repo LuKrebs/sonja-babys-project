@@ -63,6 +63,22 @@ var main = function() {
 		var anneOneString = name + "- " + price + "- " + quantidade + "- " + color + "- " + photo;
 		localStorage.setItem("anneOne", anneOneString);
 	});
+
+	$("#myCartTwo").on('click', function() {
+		var quantidade = $("#myInputTwo").val();
+		var name = $("#anneNameTwo").html();
+		var price = $("#annePrice").html();
+		var photo = $("#photoTwo").attr('src');
+
+		if (quantidade > 0) {
+			$("#itemAddTwo").css('display', 'inline');
+		}
+
+		var anneTwoString = name + "- " + price + "- " + quantidade + "- " + colorTwo + "- " + photo;
+		localStorage.setItem("anneTwo", anneTwoString);
+	});
+	
+
 	// End ~> Adding values to the cart
 };
 

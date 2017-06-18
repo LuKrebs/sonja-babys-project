@@ -3,7 +3,8 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.tiaras = [
     {
       name: "Anne",
-      price: 9,
+      price: 16.90,
+      ref: 01020,
       quantidade: 4,
       cover: "img/tiaras/Anne (1).JPG",
       coverTwo: "img/tiaras/Anne (2).JPG",
@@ -12,7 +13,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Anne",
-      price: 9,
+      price: 16.90,
+      ref: 01020,
       quantidade: 4,
       cover: "img/tiaras/Anne (3).JPG",
       coverTwo: "img/tiaras/Anne (4).JPG",
@@ -21,7 +23,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Carolina",
-      price: 9,
+      price: 16.90,
+      ref: 01020,
       quantidade: 4,
       cover: "img/tiaras/Carolina (1).JPG",
       coverTwo: "img/tiaras/Carolina (2).JPG",
@@ -30,7 +33,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Dani",
-      price: 9,
+      price: 16.90,
+      ref: 01020,
       quantidade: 4,
       cover: "img/tiaras/Dani (1).JPG",
       coverTwo: "img/tiaras/Dani (2).JPG",
@@ -39,8 +43,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Denise",
-      price: 9,
+      price: 18.90,
       quantidade: 4,
+      ref: 01010,
       cover: "img/tiaras/Denise (1).JPG",
       coverTwo: "img/tiaras/Denise (2).JPG",
       page: "denise.html",
@@ -48,7 +53,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Denise",
-      price: 9,
+      price: 18.90,
+      ref: 01010,
       quantidade: 4,
       cover: "img/tiaras/Denise (3).JPG",
       coverTwo: "img/tiaras/Denise (4).JPG",
@@ -57,7 +63,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gisele",
-      price: 9,
+      price: 16.90,
+      ref: 01020,
       quantidade: 4,
       cover: "img/tiaras/Gisele (1).JPG",
       coverTwo: "img/tiaras/Gisele (2).JPG",
@@ -66,7 +73,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gisele",
-      price: 9,
+      price: 16.90,
+      ref: 01020,
       quantidade: 4,
       cover: "img/tiaras/Gisele (3).JPG",
       coverTwo: "img/tiaras/Gisele (4).JPG",
@@ -75,8 +83,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Helena",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Helena (1).JPG",
       coverTwo: "img/tiaras/Helena (2).JPG",
       page: "helena.html",
@@ -84,8 +93,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Helena",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Helena (3).JPG",
       coverTwo: "img/tiaras/Helena (4).JPG",
       page: "helena.html",
@@ -93,8 +103,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Jacira",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Jacira (1).JPG",
       coverTwo: "img/tiaras/Jacira (2).JPG",
       page: "jacira.html",
@@ -102,8 +113,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Jacira",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Jacira (3).JPG",
       coverTwo: "img/tiaras/Jacira (4).JPG",
       page: "jacira.html",
@@ -111,8 +123,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lara",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Lara (1).JPG",
       coverTwo: "img/tiaras/Lara (2).JPG",
       page: "lara.html",
@@ -120,8 +133,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Larissa",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Larissa (1).JPG",
       coverTwo: "img/tiaras/Larissa (2).JPG",
       page: "larissa.html",
@@ -129,8 +143,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lize",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Lize (1).JPG",
       coverTwo: "img/tiaras/Lize (2).JPG",
       page: "lize.html",
@@ -138,8 +153,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lize",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Lize (3).JPG",
       coverTwo: "img/tiaras/Lize (4).JPG",
       page: "lize.html",
@@ -147,8 +163,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Luana",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Luana (1).JPG",
       coverTwo: "img/tiaras/Luana (2).JPG",
       page: "luana.html",
@@ -156,8 +173,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lúcia",
-      price: 9,
+      price: 18.90,
       quantidade: 4,
+      ref: 01010,
       cover: "img/tiaras/Lucia (1).JPG",
       coverTwo: "img/tiaras/Lucia (2).JPG",
       page: "lucia.html",
@@ -165,8 +183,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lúcia",
-      price: 9,
+      price: 18.90,
       quantidade: 4,
+      ref: 01010,
       cover: "img/tiaras/Lucia (3).JPG",
       coverTwo: "img/tiaras/Lucia (4).JPG",
       page: "lucia.html",
@@ -174,8 +193,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lúcia",
-      price: 9,
+      price: 18.90,
       quantidade: 4,
+      ref: 01010,
       cover: "img/tiaras/Lucia (5).JPG",
       coverTwo: "img/tiaras/Lucia (6).JPG",
       page: "lucia.html",
@@ -183,8 +203,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Luciane",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Luciane (1).JPG",
       coverTwo: "img/tiaras/Luciane (2).JPG",
       page: "luciane.html",
@@ -192,8 +213,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Lucila",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Lucila (1).JPG",
       coverTwo: "img/tiaras/Lucila (2).JPG",
       page: "lucila.html",
@@ -201,8 +223,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Mariana",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Mariana (1).JPG",
       coverTwo: "img/tiaras/Mariana (2).JPG",
       page: "mariana.html",
@@ -210,8 +233,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Mell",
-      price: 9,
+      price: 18.90,
       quantidade: 4,
+      ref: 01010,
       cover: "img/tiaras/Mell (1).JPG",
       coverTwo: "img/tiaras/Mell(2).JPG",
       page: "mell.html",
@@ -219,8 +243,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Morena",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Morena (1).JPG",
       coverTwo: "img/tiaras/Morena(2).JPG",
       page: "morena.html",
@@ -228,8 +253,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Rose",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Rose (1).JPG",
       coverTwo: "img/tiaras/Rose (2).JPG",
       page: "rose.html",
@@ -237,8 +263,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Rose",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Rose (3).JPG",
       coverTwo: "img/tiaras/Rose (4).JPG",
       page: "rose.html",
@@ -246,8 +273,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Sofia",
-      price: 9,
+      price: 18.90,
       quantidade: 4,
+      ref: 01010,
       cover: "img/tiaras/Sofia (1).JPG",
       coverTwo: "img/tiaras/Sofia (2).JPG",
       page: "sofia.html",
@@ -255,8 +283,9 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Yasmin",
-      price: 9,
+      price: 16.90,
       quantidade: 4,
+      ref: 01020,
       cover: "img/tiaras/Yasmin (1).JPG",
       coverTwo: "img/tiaras/Yasmin (2).JPG",
       page: "yasmin.html",
@@ -267,7 +296,8 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.bicos = [
     {
       name: "Esmeralda",
-      price: 4,
+      price: 9.90,
+      ref: 03091,
       quantidade: 4,
       cover: "img/bico de pato/Esmeralda (1).JPG",
       coverTwo: "img/bico de pato/Esmeralda (2).JPG",
@@ -276,7 +306,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Jade",
-      price: 4,
+      price: 12.90,
+      ref: 03010,
       quantidade: 4,
       cover: "img/bico de pato/Jade (1).JPG",
       coverTwo: "img/bico de pato/Jade (2).JPG",
@@ -285,7 +316,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Jade",
-      price: 4,
+      price: 12.90,
+      ref: 03010,
       quantidade: 4,
       cover: "img/bico de pato/Jade (3).JPG",
       coverTwo: "img/bico de pato/Jade (4).JPG",
@@ -294,7 +326,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Onix",
-      price: 4,
+      price: 11.90,
+      ref: 03090,
       quantidade: 4,
       cover: "img/bico de pato/Onix (1).JPG",
       coverTwo: "img/bico de pato/Onix (2).JPG",
@@ -303,7 +336,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Rubi",
-      price: 4,
+      price: 12.90,
+      ref: 03010,
       quantidade: 4,
       cover: "img/bico de pato/Rubi (1).JPG",
       coverTwo: "img/bico de pato/Rubi (2).JPG",
@@ -312,7 +346,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Safira",
-      price: 4,
+      price: 11.90,
+      ref: 03090,
       quantidade: 4,
       cover: "img/bico de pato/Safira (1).JPG",
       coverTwo: "img/bico de pato/Safira (2).JPG",
@@ -321,7 +356,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Safira",
-      price: 4,
+      price: 11.90,
+      ref: 03010,
       quantidade: 4,
       cover: "img/bico de pato/Safira (3).JPG",
       coverTwo: "img/bico de pato/Safira (4).JPG",
@@ -330,7 +366,7 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Topázio",
-      price: 4,
+      price: 12.90,
       quantidade: 4,
       cover: "img/bico de pato/Topazio (1).JPG",
       coverTwo: "img/bico de pato/Topazio (2).JPG",
@@ -342,7 +378,8 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.calcinhas = [
     {
       name: "Calcinha com faixa",
-      price: 24,
+      price: 29.60,
+      ref: 05000,
       quantidade: 4,
       cover: "img/calcinhas/Calcinha (1).JPG",
       //coverTwo: 
@@ -351,7 +388,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Calcinha com faixa",
-      price: 24,
+      price: 29.60,
+      ref: 05000,
       quantidade: 4,
       cover: "img/calcinhas/Calcinha (2).JPG",
       //coverTwo: 
@@ -363,7 +401,8 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.sapatinhos = [
     {
       name: "Delicado",
-      price: 19,
+      price: 28.90,
+      ref: 04021,
       quantidade: 4,
       cover: "img/sapatinhos/Delicado (1).JPG",
       coverTwo: "img/sapatinhos/Delicado (2).JPG",
@@ -372,7 +411,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Fashion",
-      price: 19,
+      price: 28.90,
+      ref: 04021,
       quantidade: 4,
       cover: "img/sapatinhos/Fashion (1).JPG",
       coverTwo: "img/sapatinhos/Fashion (2).JPG",
@@ -381,7 +421,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Ternura",
-      price: 19,
+      price: 28.90,
+      ref: 04021,
       quantidade: 4,
       cover: "img/sapatinhos/Ternura (1).JPG",
       coverTwo: "img/sapatinhos/Ternura (2).JPG",
@@ -393,7 +434,8 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.suspensorios = [
     {
       name: "Suspensório",
-      price: 7,
+      price: 13.90,
+      ref: 10001,
       quantidade: 4,
       cover: "img/suspensorios/Suspensorio (1).JPG",
       coverTwo: "img/suspensorios/Suspensorio (2).JPG",
@@ -403,7 +445,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Suspensório",
-      price: 7,
+      price: 13.90,
+      ref: 10001,
       quantidade: 4,
       cover: "img/suspensorios/Suspensorio (4).JPG",
       page: "suspensorio.html",
@@ -411,7 +454,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Suspensório",
-      price: 7,
+      price: 13.90,
+      ref: 10001,
       quantidade: 4,
       cover: "img/suspensorios/Suspensorio (5).JPG",
       page: "suspensorio.html",
@@ -422,7 +466,8 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.gravatas = [
     {
       name: "Borboleta",
-      price: 7,
+      price: 6.20,
+      ref: 07001,
       quantidade: 4,
       cover: "img/gravatas/Borboleta (1).JPG",
       //coverTwo: 
@@ -431,7 +476,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Borboleta",
-      price: 7,
+      price: 6.20,
+      ref: 07001,
       quantidade: 4,
       cover: "img/gravatas/Borboleta (2).JPG",
       //coverTwo: 
@@ -440,7 +486,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Borboleta",
-      price: 7,
+      price: 6.20,
+      ref: 07001,
       quantidade: 4,
       cover: "img/gravatas/Borboleta (3).JPG",
       //coverTwo: 
@@ -453,7 +500,8 @@ app.controller('MainController', ['$scope', function($scope) {
     // Gravata ~> Start
     {
       name: "Gravata",
-      price: 7,
+      price: 8.70,
+      ref: 07000,
       quantidade: 4,
       cover: "img/gravatas/Gravata (1).JPG",
       //coverTwo: 
@@ -462,7 +510,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gravata",
-      price: 7,
+      price: 8.70,
+      ref: 07000,
       quantidade: 4,
       cover: "img/gravatas/Gravata (2).JPG",
       //coverTwo: 
@@ -471,7 +520,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gravata",
-      price: 7,
+      price: 8.70,
+      ref: 07000,
       quantidade: 4,
       cover: "img/gravatas/Gravata (3).JPG",
       //coverTwo: 
@@ -480,7 +530,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gravata",
-      price: 7,
+      price: 8.70,
+      ref: 07000,
       quantidade: 4,
       cover: "img/gravatas/Gravata (4).JPG",
       //coverTwo: 
@@ -489,7 +540,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gravata",
-      price: 7,
+      price: 8.70,
+      ref: 07000,
       quantidade: 4,
       cover: "img/gravatas/Gravata (5).JPG",
       //coverTwo: 
@@ -498,7 +550,8 @@ app.controller('MainController', ['$scope', function($scope) {
     },
     {
       name: "Gravata",
-      price: 7,
+      price: 8.70,
+      ref: 07000,
       quantidade: 4,
       cover: "img/gravatas/Gravata (6).JPG",
       //coverTwo: 
@@ -510,8 +563,9 @@ app.controller('MainController', ['$scope', function($scope) {
   // Tiaras ~> Start 
   $scope.anneOne = {
     name: "Anne",
-    price: 9,
+    price: 16.90,
     quantidade: 4,
+    ref: 01020,
     cover: "img/tiaras/Anne (1).JPG",
     coverTwo: "img/tiaras/Anne (2).JPG",
     page: "anne.html",
@@ -520,8 +574,9 @@ app.controller('MainController', ['$scope', function($scope) {
   };
   $scope.anneTwo = {
     name: "Anne",
-    price: 9,
+    price: 16.90,
     quantidade: 4,
+    ref: 01020,
     cover: "img/tiaras/Anne (3).JPG",
     coverTwo: "img/tiaras/Anne (4).JPG",
     page: "anne.html",
@@ -530,7 +585,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.carolina = {
     name: "Carolina",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Carolina (1).JPG",
     coverTwo: "img/tiaras/Carolina (2).JPG",
@@ -539,7 +595,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.dani = {
     name: "Dani",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Dani (1).JPG",
     coverTwo: "img/tiaras/Dani (2).JPG",
@@ -548,7 +605,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.deniseOne = {
     name: "Denise",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Denise (1).JPG",
     coverTwo: "img/tiaras/Denise (2).JPG",
@@ -557,7 +615,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.deniseTwo = {
     name: "Denise",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Denise (3).JPG",
     coverTwo: "img/tiaras/Denise (4).JPG",
@@ -566,7 +625,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.giseleOne = {
     name: "Gisele",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Gisele (1).JPG",
     coverTwo: "img/tiaras/Gisele (2).JPG",
@@ -575,7 +635,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.giseleTwo = {
     name: "Gisele",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Gisele (3).JPG",
     coverTwo: "img/tiaras/Gisele (4).JPG",
@@ -584,7 +645,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.helenaOne = {
     name: "Helena",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Helena (1).JPG",
     coverTwo: "img/tiaras/Helena (2).JPG",
@@ -593,7 +655,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.helenaTwo = {
     name: "Helena",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Helena (3).JPG",
     coverTwo: "img/tiaras/Helena (4).JPG",
@@ -602,7 +665,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.jaciraOne = {
     name: "Jacira",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Jacira (1).JPG",
     coverTwo: "img/tiaras/Jacira (2).JPG",
@@ -611,7 +675,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.jaciraTwo = {
     name: "Jacira",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Jacira (3).JPG",
     coverTwo: "img/tiaras/Jacira (4).JPG",
@@ -620,7 +685,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.lara = {
     name: "Lara",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Lara (1).JPG",
     coverTwo: "img/tiaras/Lara (2).JPG",
@@ -629,7 +695,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.larissa = {
     name: "Larissa",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Larissa (1).JPG",
     coverTwo: "img/tiaras/Larissa (2).JPG",
@@ -638,7 +705,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.lizeOne = {
     name: "Lize",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Lize (1).JPG",
     coverTwo: "img/tiaras/Lize (2).JPG",
@@ -647,7 +715,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.lizeTwo = {
     name: "Lize",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Lize (3).JPG",
     coverTwo: "img/tiaras/Lize (4).JPG",
@@ -656,7 +725,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.luana = {
     name: "Luana",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Luana (1).JPG",
     coverTwo: "img/tiaras/Luana (2).JPG",
@@ -665,7 +735,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.luciaOne = {
     name: "Lúcia",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Lucia (1).JPG",
     coverTwo: "img/tiaras/Lucia (2).JPG",
@@ -674,7 +745,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.luciaTwo = {
     name: "Lúcia",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Lucia (3).JPG",
     coverTwo: "img/tiaras/Lucia (4).JPG",
@@ -683,7 +755,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.luciaThree = {
     name: "Lúcia",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Lucia (5).JPG",
     coverTwo: "img/tiaras/Lucia (6).JPG",
@@ -692,7 +765,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.luciane = {
     name: "Luciane",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Luciane (1).JPG",
     coverTwo: "img/tiaras/Luciane (2).JPG",
@@ -701,7 +775,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.lucila = {
     name: "Lucila",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Lucila (1).JPG",
     coverTwo: "img/tiaras/Lucila (2).JPG",
@@ -710,7 +785,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.mariana = {
     name: "Mariana",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Mariana (1).JPG",
     coverTwo: "img/tiaras/Mariana (2).JPG",
@@ -719,7 +795,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.mell = {
     name: "Mell",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Mell (1).JPG",
     coverTwo: "img/tiaras/Mell(2).JPG",
@@ -728,7 +805,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.morena = {
     name: "Morena",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Morena (1).JPG",
     coverTwo: "img/tiaras/Morena(2).JPG",
@@ -737,7 +815,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.roseOne = {
     name: "Rose",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Rose (1).JPG",
     coverTwo: "img/tiaras/Rose (2).JPG",
@@ -746,7 +825,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.roseTwo = {
     name: "Rose",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Rose (3).JPG",
     coverTwo: "img/tiaras/Rose (4).JPG",
@@ -755,7 +835,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.sofia = {
     name: "Sofia",
-    price: 9,
+    price: 18.90,
+    ref: 01010,
     quantidade: 4,
     cover: "img/tiaras/Sofia (1).JPG",
     coverTwo: "img/tiaras/Sofia (2).JPG",
@@ -764,7 +845,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.yasmin = {
     name: "Yasmin",
-    price: 9,
+    price: 16.90,
+    ref: 01020,
     quantidade: 4,
     cover: "img/tiaras/Yasmin (1).JPG",
     coverTwo: "img/tiaras/Yasmin (2).JPG",
@@ -776,7 +858,8 @@ app.controller('MainController', ['$scope', function($scope) {
   // Bicos de pato ~> Start
   $scope.esmeralda = {
     name: "Esmeralda",
-    price: 4,
+    price: 9.90,
+    ref: 03091,
     quantidade: 4,
     cover: "img/bico de pato/Esmeralda (1).JPG",
     coverTwo: "img/bico de pato/Esmeralda (2).JPG",
@@ -785,7 +868,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.jadeOne = {
     name: "Jade",
-    price: 4,
+    price: 12.90,
+    ref: 03010,
     quantidade: 4,
     cover: "img/bico de pato/Jade (1).JPG",
     coverTwo: "img/bico de pato/Jade (2).JPG",
@@ -794,7 +878,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.jadeTwo = {
     name: "Jade",
-    price: 4,
+    price: 12.90,
+    ref: 03010,
     quantidade: 4,
     cover: "img/bico de pato/Jade (3).JPG",
     coverTwo: "img/bico de pato/Jade (4).JPG",
@@ -803,7 +888,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.onix = {
     name: "Onix",
-    price: 4,
+    price: 11.90,
+    ref: 03090,
     quantidade: 4,
     cover: "img/bico de pato/Onix (1).JPG",
     coverTwo: "img/bico de pato/Onix (2).JPG",
@@ -812,7 +898,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.rubi = {
     name: "Rubi",
-    price: 4,
+    price: 12.90,
+    ref: 03010,
     quantidade: 4,
     cover: "img/bico de pato/Rubi (1).JPG",
     coverTwo: "img/bico de pato/Rubi (2).JPG",
@@ -821,7 +908,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.safiraOne = {
     name: "Safira",
-    price: 4,
+    price: 11.90,
+    ref: 03090,
     quantidade: 4,
     cover: "img/bico de pato/Safira (1).JPG",
     coverTwo: "img/bico de pato/Safira (2).JPG",
@@ -830,7 +918,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.safiraTwo = {
     name: "Safira",
-    price: 4,
+    price: 11.90,
+    ref: 03090,
     quantidade: 4,
     cover: "img/bico de pato/Safira (3).JPG",
     coverTwo: "img/bico de pato/Safira (4).JPG",
@@ -839,7 +928,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.topazio = {
     name: "Topázio",
-    price: 4,
+    price: 12.90,
+    ref: 03010,
     quantidade: 4,
     cover: "img/bico de pato/Topazio (1).JPG",
     coverTwo: "img/bico de pato/Topazio (2).JPG",
@@ -851,7 +941,8 @@ app.controller('MainController', ['$scope', function($scope) {
   // Calcinhas ~> Start
   $scope.calcinhaOne = {
     name: "Calcinha com faixa",
-    price: 24,
+    price: 29.60,
+    ref: 05000,
     quantidade: 4,
     cover: "img/calcinhas/Calcinha (1).JPG",
     //coverTwo: 
@@ -860,7 +951,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.calcinhaTwo = {
     name: "Calcinha com faixa",
-    price: 24,
+    price: 29.60,
+    ref: 05000,
     quantidade: 4,
     cover: "img/calcinhas/Calcinha (2).JPG",
     //coverTwo: 
@@ -873,7 +965,8 @@ app.controller('MainController', ['$scope', function($scope) {
   // Sapatinhos ~> Start
   $scope.delicado = {
     name: "Delicado",
-    price: 19,
+    price: 28.90,
+    ref: 04021,
     quantidade: 4,
     cover: "img/sapatinhos/Delicado (1).JPG",
     coverTwo: "img/sapatinhos/Delicado (2).JPG",
@@ -882,7 +975,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.fashion = {
     name: "Fashion",
-    price: 19,
+    price: 28.90,
+    ref: 04021,
     quantidade: 4,
     cover: "img/sapatinhos/Fashion (1).JPG",
     coverTwo: "img/sapatinhos/Fashion (2).JPG",
@@ -891,7 +985,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.ternura = {
     name: "Ternura",
-    price: 19,
+    price: 28.90,
+    ref: 04021,
     quantidade: 4,
     cover: "img/sapatinhos/Ternura (1).JPG",
     coverTwo: "img/sapatinhos/Ternura (2).JPG",
@@ -902,7 +997,8 @@ app.controller('MainController', ['$scope', function($scope) {
   // Gravata borboleta ~> Start
   $scope.borboletaBege = {
     name: "Borboleta",
-    price: 7,
+    price: 6.20,
+    ref: 07001,
     quantidade: 4,
     cover: "img/gravatas/Borboleta (1).JPG",
     //coverTwo: 
@@ -911,7 +1007,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.borboletaBranca = {
     name: "Borboleta",
-    price: 7,
+    price: 6.20,
+    ref: 07001,
     quantidade: 4,
     cover: "img/gravatas/Borboleta (2).JPG",
     //coverTwo: 
@@ -920,7 +1017,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.borboletaAzul = {
     name: "Borboleta",
-    price: 7,
+    price: 6.20,
+    ref: 07001,
     quantidade: 4,
     cover: "img/gravatas/Borboleta (3).JPG",
     //coverTwo: 
@@ -933,7 +1031,8 @@ app.controller('MainController', ['$scope', function($scope) {
   // Gravata ~> Start
   $scope.gravataAmarela = {
     name: "Gravata",
-    price: 7,
+    price: 8.70,
+    ref: 07000,
     quantidade: 4,
     cover: "img/gravatas/Gravata (1).JPG",
     //coverTwo: 
@@ -942,7 +1041,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.gravataAzulClara = {
     name: "Gravata",
-    price: 7,
+    price: 8.70,
+    ref: 07000,
     quantidade: 4,
     cover: "img/gravatas/Gravata (2).JPG",
     //coverTwo: 
@@ -951,7 +1051,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.gravataListradaTorto = {
     name: "Gravata",
-    price: 7,
+    price: 8.70,
+    ref: 07000,
     quantidade: 4,
     cover: "img/gravatas/Gravata (3).JPG",
     //coverTwo: 
@@ -960,7 +1061,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.gravataVermelha = {
     name: "Gravata",
-    price: 7,
+    price: 8.70,
+    ref: 07000,
     quantidade: 4,
     cover: "img/gravatas/Gravata (4).JPG",
     //coverTwo: 
@@ -969,7 +1071,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.gravataPreta = {
     name: "Gravata",
-    price: 7,
+    price: 8.70,
+    ref: 07000,
     quantidade: 4,
     cover: "img/gravatas/Gravata (5).JPG",
     //coverTwo: 
@@ -978,7 +1081,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.gravataListradaReto = {
     name: "Gravata",
-    price: 7,
+    price: 8.70,
+    ref: 07000,
     quantidade: 4,
     cover: "img/gravatas/Gravata (6).JPG",
     //coverTwo: 
@@ -991,7 +1095,8 @@ app.controller('MainController', ['$scope', function($scope) {
   // Suspensorio ~> Start
   $scope.suspensorioBege = {
     name: "Suspensório",
-    price: 7,
+    price: 13.90,
+    ref: 10001,
     quantidade: 4,
     cover: "img/suspensorios/Suspensorio (1).JPG",
     coverTwo: "img/suspensorios/Suspensorio (2).JPG",
@@ -1001,7 +1106,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.suspensorioPreto = {
     name: "Suspensório",
-    price: 7,
+    price: 13.90,
+    ref: 10001,
     quantidade: 4,
     cover: "img/suspensorios/Suspensorio (4).JPG",
     page: "suspensorio.html",
@@ -1009,7 +1115,8 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   $scope.suspensorioAzul = {
     name: "Suspensório",
-    price: 7,
+    price: 13.90,
+    ref: 10001,
     quantidade: 4,
     cover: "img/suspensorios/Suspensorio (5).JPG",
     page: "suspensorio.html",

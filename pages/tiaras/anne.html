@@ -56,26 +56,38 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="../../index.html">Início</a></li>
-                <li><a href="../tiaras.html">Tiaras</a></li>
-                <li><a href="../bicos.html">Bicos de Pato</a></li>
-                <li><a href="../calcinha.html">Calcinhas</a></li>
+                <li><a href="../../index.html"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+                <li class="dropdown">
+                  <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feminino <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../tiaras.html">Tiaras</a></li>
+                    <li><a href="../bicos.html">Bicos de Pato</a></li>
+                    <li><a href="../calcinhas.html">Calcinhas</a></li>
+                    <li><a href="../sapatinhos.html">Sapatinhos</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown especial">
                   <a href="../meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="../meninos.html#gravatas">Gravatas</a></li>
-                    <li><a href="../meninos.html#suspensorios">Suspensórios</a></li>
+                    <li class="especial"><a href="../meninos.html#gravatas" >Gravatas</a></li>
+                    <li class="especial"><a href="../meninos.html#suspensorios" >Suspensórios</a></li>
                   </ul>
                 </li>
                 <li><a href="../carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../info/entenda.html">Como nosso site funciona?</a></li>
+                    <li><a href="../info/entrega.html">Política de entrega</a></li>
+                    <li><a href="../info/sobrenos.html">Sobre nós</a></li>
+                    <li><a href="../info/dicas.html">Dicas para os lojistas</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="../login.html">Login</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="../cadastro.html">Cadastro</a></li>
                   </ul>
                 </li>
               </ul>
@@ -100,7 +112,7 @@
             <img ng-src="../../{{anneOne.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
           </div>
           <div class="col-md-3 col-xs-3 bottom-pics">
-            <img ng-src="../../{{anneTwo.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+            <img ng-src="../../{{anneTwo.cover}}" id="photoTwo" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
           </div>
           <div class="col-md-3 col-xs-3 bottom-pics">
             <img ng-src="../../{{anneTwo.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
@@ -111,13 +123,14 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 name">
               <h2 class="text-center" id="anneName">Tiara {{ anneOne.name }}</h2>
+              <h2 class="text-center" id="anneNameTwo" style="display: none;">Tiara {{ anneTwo.name }}</h2>
               <p id="test" style="display: none;"> {{ anneOne.color }}</p>
               <p id="testTwo" style="display: none;"> {{ anneTwo.color }}</p>
             </div>
           </div>
           <div class="row">
               <div class="col-md-12 col-sm-12 style-price">
-                <h2 class="text-center priceItem" id="annePrice">R$ {{ anneOne.price }}</h2>
+                <h2 class="text-center priceItem" id="annePrice">R{{ anneOne.price | currency }}</h2>
                 <h4 class="text-center priceText" style="display: none;">Valores disponíveis apenas para clientes cadastrados.</h4> 
                 <h4 class="text-center priceText" style="display: none;">Faça seu <a href="../login.html">login</a> ou <a href="../cadastro.html">cadastre-se</a></h4>
                 <h4 class="text-center priceText" style="display: none;">Se você é novo por aqui, <a href="../entenda.html">entenda como nosso site funciona</a></h4> 
@@ -141,15 +154,30 @@
                 <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="myPlusIconTwo"></i> 
                 <input type="number" name="quantidade" id="myInputTwo" class="priceItem">
                 <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="myMinusIconTwo"></i>
-                <button class="btn btn-primary pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
+                <button class="btn btn-primary pull-right" id="myCartTwo"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
               </h4>
+              <p class="priceItem" id="itemAddTwo" style="color: black; display: none;">Item adicionado! :)</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12 description">
-              <h3 class="">Descrição: </h3>
+              <h3>Descrição: </h3>
               <p> {{ anneOne.description }} </p>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 description">
+              <h3>Prazo de entrega: </h3>
+              <p>Produto disponível à pronta entrega. Envio imediato. </p>
+            </div>
+          </div>
+          <div class="row">
+            <a href="#"><div class="col-md-3 col-sm-3 pull-left carrinho">
+              <h4 class="text-center"><i class="fa fa-arrow-left" aria-hidden="true"></i> Item anterior</h4>
+            </div></a>
+            <a href="#"><div class="col-md-3 col-sm-3 pull-right carrinho">
+              <h4 class="text-center">Próximo item <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            </div></a>
           </div>
           <div class="row">
             <a href="../carrinho.html"><div class="col-md-3 col-sm-3 pull-right carrinho">
@@ -169,16 +197,24 @@
     <div class="container" ng-controller="MainController">
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{carolina.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{carolina.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ carolina.name }}</p>
+          <p class="price">R{{ carolina.price | currency}}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{dani.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+          <a ng-href="{{ dani.page }}"><img ng-src="../../{{dani.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ dani.name }}</p>
+          <p class="price">R{{ dani.price | currency}}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{deniseOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+          <a ng-href="{{ deniseOne.page }}"><img ng-src="../../{{deniseOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ deniseOne.name }}</p>
+          <p class="price">R{{ deniseOne.price | currency}}</p>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-3">
-          <a ng-href="{{ carolina.page }}"><img ng-src="../../{{giseleOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'></a>
+          <a ng-href="{{ giseleOne.page }}"><img ng-src="../../{{giseleOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ giseleOne.name }}</p>
+          <p class="price">R{{ giseleOne.price | currency}}</p>
         </div>
       </div>
     </div>
