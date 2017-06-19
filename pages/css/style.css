@@ -21,7 +21,7 @@ h2 {
  font-family: 'Crimson Text', serif; 
  color: rgb(149, 16, 172);
  font-weight: 600;
- margin: 0 auto;
+ margin: 5px auto;
  padding: 15px 0;
  text-align: center;
  font-size: 34px;
@@ -30,7 +30,7 @@ h3 {
   font-family: 'Merriweather Sans', sans-serif;
   color: rgb(149, 16, 172);
   font-weight: 600;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 h4 {
   font-family: 'Merriweather Sans', sans-serif;
@@ -42,7 +42,7 @@ h4 {
 }
 
 input {
-  width: 40px;
+  width: 50px;
 }
 button.btn-primary {
   margin-top: -5px;
@@ -67,7 +67,7 @@ button.btn-primary:active {
 }
 
 .fa-plus-circle {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
   cursor: pointer;
 }
 .fa-minus-circle {
@@ -76,14 +76,15 @@ button.btn-primary:active {
 
 /*  primeiro */
 .primeiro {
-  margin: 100px auto;
+  margin: 100px auto 20px auto;
 }
 
 /*  name, quantidade, price */
 .container .col-md-6 .row .name, .container .col-md-6 .row .style-price, .container .col-md-6 .row .quantidade, .container .col-md-6 .row .description {
   background-color: white;
   border-radius: 5px;
-  margin: 5px auto;
+  margin: 10px auto;
+  clear: both;
 }
 
 /* carrinho */
@@ -252,12 +253,9 @@ button.btn-primary:active {
 }
 
 
-/* End ~> Navbar */
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
   .navbar-header {
       float: none;
   }
@@ -272,7 +270,7 @@ button.btn-primary:active {
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   }
   .navbar-fixed-top {
-      /*top: 20px;*/
+      top: 0;
       border-width: 0 0 1px;
   }
   .navbar-collapse.collapse {
@@ -293,7 +291,6 @@ button.btn-primary:active {
       display:block !important;
   }
 }
-
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -302,6 +299,7 @@ button.btn-primary:active {
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
+    
   }
   .navbar-wrapper .navbar {
     padding-right: 0;

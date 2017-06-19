@@ -1,5 +1,7 @@
 var main = function() {
 
+	// Start anneOne anneTwo
+
 	var color = $("#test").html();
 	var colorTwo = $("#testTwo").html();
 
@@ -80,6 +82,14 @@ var main = function() {
 	
 
 	// End ~> Adding values to the cart
+
+
+	// End ~>  anneOne anneTwo
+
+	var carolinaColor = $("#carolinaColor").html();
+	var carolinaNumber = $("#carolinaNumber").html();
+	$("#color").css('background-color', carolinaColor);
+
 };
 
 

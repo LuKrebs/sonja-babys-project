@@ -104,20 +104,14 @@
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <span class='zoom' id='ex1'>
-            <img ng-src='../../{{anneOne.cover}}' alt='Tiara Anne. Produto disponível para pronta-entrega' class="img-responsive img-thumbnail" id="big-picture" />
+            <img ng-src='../../{{carolina.cover}}' alt='Tiara Anne. Produto disponível para pronta-entrega' class="img-responsive img-thumbnail" id="big-picture" />
           </span>
           <div class="row">
             <div class="col-md-3 col-xs-3  bottom-pics">
-              <img ng-src="../../{{anneOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
-            </div>
-            <div class="col-md-3 col-xs-3 bottom-pics">
-              <img ng-src="../../{{anneOne.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
-            </div>
-            <div class="col-md-3 col-xs-3 bottom-pics">
-              <img ng-src="../../{{anneTwo.cover}}" id="photoTwo" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+              <img ng-src="../../{{carolina.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
             </div>
             <div class="col-md-3 col-xs-3 bottom-pics" style="margin-bottom: 20px;">
-              <img ng-src="../../{{anneTwo.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
+              <img ng-src="../../{{carolina.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Anne. Produto disponível para pronta-entrega'>
             </div>
           </div>
         </div>
@@ -125,15 +119,13 @@
         <div class="col-md-6 col-sm-6">
           <div class="row">
             <div class="col-md-12 col-sm-12 name">
-              <h2 class="text-center" id="anneName">Tiara {{ anneOne.name }}</h2>
-              <h2 class="text-center" id="anneNameTwo" style="display: none;">Tiara {{ anneTwo.name }}</h2>
-              <p id="test" style="display: none;"> {{ anneOne.color }}</p>
-              <p id="testTwo" style="display: none;"> {{ anneTwo.color }}</p>
+              <h2 class="text-center" id="carolinaName">Tiara {{ carolina.name }}</h2>
+              <p id="test" style="display: none;"> {{ carolina.color }}</p>
             </div>
           </div>
           <div class="row">
               <div class="col-md-12 col-sm-12 style-price">
-                <h2 class="text-center priceItem" id="annePrice">R{{ anneOne.price | currency }}</h2>
+                <h2 class="text-center priceItem" id="carolinaPrice">R{{ carolina.price | currency }}</h2>
                 <h4 class="text-center priceText" style="display: none;">Valores disponíveis apenas para clientes cadastrados.</h4> 
                 <h4 class="text-center priceText" style="display: none;">Faça seu <a href="../login.html">login</a> ou <a href="../cadastro.html">cadastre-se</a></h4>
                 <h4 class="text-center priceText" style="display: none;">Se você é novo por aqui, <a href="../entenda.html">entenda como nosso site funciona</a></h4> 
@@ -144,32 +136,21 @@
               <h3>Cores disponíveis:</h3>
               <h4 class="text-left"> 
                 <span id="color"></span><span class="priceItem">Itens em estoque:</span> 
-                <span id="number" class="priceItem">{{ anneOne.quantidade }}</span> 
+                <span id="carolinaNumber" class="priceItem">{{ carolina.quantidade }}</span> 
               </h4>
               <h4>
-                <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="myPlusIcon"></i> 
-                <input type="number" name="quantidade" id="myInput" class="priceItem"> 
-                <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="myMinusIcon"></i>
-                <button class="btn btn-primary pull-right" id="myCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
+                <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="carolinaMyPlusIcon"></i> 
+                <input type="number" name="quantidade" id="carololinaMyInput" class="priceItem"> 
+                <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="carolinaMyMinusIcon"></i>
+                <button class="btn btn-primary pull-right" id="carolinaMyCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
               </h4>
-              <p class="priceItem" id="itemAdd" style="color: black; display: none;">Item adicionado! :)</p>
-              <h4 class="text-left">
-                <span id="colorTwo"></span><span class="priceItem">Itens em estoque:</span> 
-                <span id="numberTwo" class="priceItem">{{ anneTwo.quantidade }}</span> 
-              </h4>
-              <h4>
-                <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="myPlusIconTwo"></i> 
-                <input type="number" name="quantidade" id="myInputTwo" class="priceItem">
-                <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="myMinusIconTwo"></i>
-                <button class="btn btn-primary pull-right" id="myCartTwo"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
-              </h4>
-              <p class="priceItem" id="itemAddTwo" style="color: black; display: none;">Item adicionado! :)</p>
+              <p class="priceItem" id="carolinaItemAdd" style="color: black; display: none;">Item adicionado! :)</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12 description">
               <h3>Descrição: </h3>
-              <p> {{ anneOne.description }} </p>
+              <p> {{ carolina.description }} </p>
             </div>
           </div>
           <div class="row">
@@ -179,10 +160,10 @@
             </div>
           </div>
           <div class="row">
-            <a href="yasmin.html"><div class="col-md-3 col-sm-3 pull-left carrinho">
+            <a href="anne.html"><div class="col-md-3 col-sm-3 pull-left carrinho">
               <h4 class="text-center"><i class="fa fa-arrow-left" aria-hidden="true"></i> Item anterior</h4>
             </div></a>
-            <a href="carolina.html"><div class="col-md-3 col-sm-3 pull-right carrinho">
+            <a href="dani.html"><div class="col-md-3 col-sm-3 pull-right carrinho">
               <h4 class="text-center">Próximo item <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
             </div></a>
           </div>

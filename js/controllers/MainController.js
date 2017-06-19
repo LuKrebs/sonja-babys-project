@@ -62,7 +62,7 @@ app.controller('MainController', ['$scope', function($scope) {
       description: "Tiara encapada com cetim. Flores ricamente bordadas com pérolas e strass e miolo podendo ser craquelado."
     },
     {
-      name: "Gisele",
+      name: "Letícia",
       price: 16.90,
       ref: 01020,
       quantidade: 4,
@@ -72,7 +72,7 @@ app.controller('MainController', ['$scope', function($scope) {
       description: "Tiara encapada manualmente com cetim e renda, miolo bordado com pérolas e strass."
     },
     {
-      name: "Gisele",
+      name: "Letícia",
       price: 16.90,
       ref: 01020,
       quantidade: 4,
@@ -202,7 +202,7 @@ app.controller('MainController', ['$scope', function($scope) {
       description: "Tiara encapada com cetim, enfeitada com delicadas flores em cetim e toda bordada com strass e pérolas."
     },
     {
-      name: "Luciane",
+      name: "Brenda",
       price: 16.90,
       quantidade: 4,
       ref: 01020,
@@ -591,6 +591,7 @@ app.controller('MainController', ['$scope', function($scope) {
     cover: "img/tiaras/Carolina (1).JPG",
     coverTwo: "img/tiaras/Carolina (2).JPG",
     page: "carolina.html",
+    color: "rgb(228, 31, 46)",
     description: "Tiara encapada manualmente com cetim, flor com pétalas duplas também em cetim, folha bordada com pérolas e strass."
   }
   $scope.dani = {
@@ -624,7 +625,7 @@ app.controller('MainController', ['$scope', function($scope) {
     description: "Tiara encapada com cetim. Flores ricamente bordadas com pérolas e strass e miolo podendo ser craquelado."
   }
   $scope.giseleOne = {
-    name: "Gisele",
+    name: "Letícia",
     price: 16.90,
     ref: 01020,
     quantidade: 4,
@@ -634,7 +635,7 @@ app.controller('MainController', ['$scope', function($scope) {
     description: "Tiara encapada manualmente com cetim e renda, miolo bordado com pérolas e strass."
   }
   $scope.giseleTwo = {
-    name: "Gisele",
+    name: "Letícia",
     price: 16.90,
     ref: 01020,
     quantidade: 4,
@@ -764,7 +765,7 @@ app.controller('MainController', ['$scope', function($scope) {
     description: "Tiara encapada com cetim, enfeitada com delicadas flores em cetim e toda bordada com strass e pérolas."
   }
   $scope.luciane = {
-    name: "Luciane",
+    name: "Brenda",
     price: 16.90,
     ref: 01020,
     quantidade: 4,
