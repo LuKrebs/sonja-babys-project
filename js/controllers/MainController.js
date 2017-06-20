@@ -602,6 +602,7 @@ app.controller('MainController', ['$scope', function($scope) {
     cover: "img/tiaras/Dani (1).JPG",
     coverTwo: "img/tiaras/Dani (2).JPG",
     page: "dani.html",
+    color: "rgb(8, 7, 7)",
     description: "Tiara encapada manualmente com cetim, laço sofisticado em paetê, com ponta única."
   }
   $scope.deniseOne = {

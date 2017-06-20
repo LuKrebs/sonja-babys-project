@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../img/favicon.ico">
+
+    <title>Tiara Dani | Sonja Baby's</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- JavaScript and Angular -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    
+  </head>
+
+  <body ng-app="myApp">
+
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html"><img src="../../img/logo1.png" class="img-responsive"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="../../index.html"><i class="fa fa-home" aria-hidden="true"></i> Início</a></li>
+                <li class="dropdown">
+                  <a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feminino <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../tiaras.html">Tiaras</a></li>
+                    <li><a href="../bicos.html">Bicos de Pato</a></li>
+                    <li><a href="../calcinhas.html">Calcinhas</a></li>
+                    <li><a href="../sapatinhos.html">Sapatinhos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown especial">
+                  <a href="../meninos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Masculino <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="especial"><a href="../meninos.html#gravatas" >Gravatas</a></li>
+                    <li class="especial"><a href="../meninos.html#suspensorios" >Suspensórios</a></li>
+                  </ul>
+                </li>
+                <li><a href="../carrinho.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Meu Carrinho</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle" aria-hidden="true"></i> Informações <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../info/entenda.html">Como nosso site funciona?</a></li>
+                    <li><a href="../info/entrega.html">Política de entrega</a></li>
+                    <li><a href="../info/sobrenos.html">Sobre nós</a></li>
+                    <li><a href="../info/dicas.html">Dicas para os lojistas</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Área do cliente <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../login.html">Login</a></li>
+                    <li><a href="../cadastro.html">Cadastro</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+    <div class="container primeiro" ng-controller="MainController">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <span class='zoom' id='ex1'>
+            <img ng-src='../../{{dani.cover}}' alt='Tiara Dani. Produto disponível para pronta-entrega' class="img-responsive img-thumbnail" id="big-picture" />
+          </span>
+          <div class="row">
+            <div class="col-md-3 col-xs-3  bottom-pics">
+              <img ng-src="../../{{dani.cover}}" class="img-responsive img-thumbnail pictures" alt='Tiara Dani. Produto disponível para pronta-entrega'>
+            </div>
+            <div class="col-md-3 col-xs-3 bottom-pics" style="margin-bottom: 20px;">
+              <img ng-src="../../{{dani.coverTwo}}" class="img-responsive img-thumbnail pictures" alt='Tiara Dani. Produto disponível para pronta-entrega'>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 name">
+              <h2 class="text-center" id="daniName">Tiara {{ dani.name }}</h2>
+              <p id="daniColor" style="display: none;"> {{ dani.color }}</p>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 col-sm-12 style-price">
+                <h2 class="text-center priceItem" id="daniPrice">R{{ dani.price | currency }}</h2>
+                <h4 class="text-center priceText" style="display: none;">Valores disponíveis apenas para clientes cadastrados.</h4> 
+                <h4 class="text-center priceText" style="display: none;">Faça seu <a href="../login.html">login</a> ou <a href="../cadastro.html">cadastre-se</a></h4>
+                <h4 class="text-center priceText" style="display: none;">Se você é novo por aqui, <a href="../entenda.html">entenda como nosso site funciona</a></h4> 
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 quantidade" style="clear: both;">
+              <h3>Cores disponíveis:</h3>
+              <h4 class="text-left"> 
+                <span id="color"></span><span class="priceItem">Itens em estoque:</span> 
+                <span id="daniNumber" class="priceItem">{{ dani.quantidade }}</span> 
+              </h4>
+              <h4>
+                <i class="fa fa-plus-circle priceItem" aria-hidden="true" id="daniMyPlusIcon"></i> 
+                <input type="number" name="quantidade" id="daniMyInput" class="priceItem"> 
+                <i class="fa fa-minus-circle priceItem" aria-hidden="true" id="daniMyMinusIcon"></i>
+                <button class="btn btn-primary pull-right" id="daniMyCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar</button>
+              </h4>
+              <p class="priceItem" id="daniItemAdd" style="color: black; display: none;">Item adicionado! :)</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 description">
+              <h3>Descrição: </h3>
+              <p> {{ dani.description }} </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 description">
+              <h3>Prazo de entrega: </h3>
+              <p>Produto disponível à pronta entrega. Envio imediato. </p>
+            </div>
+          </div>
+          <div class="row">
+            <a href="carolina.html"><div class="col-md-3 col-sm-3 pull-left carrinho">
+              <h4 class="text-center"><i class="fa fa-arrow-left" aria-hidden="true"></i> Item anterior</h4>
+            </div></a>
+            <a href="deniseTwo.html"><div class="col-md-3 col-sm-3 pull-right carrinho">
+              <h4 class="text-center">Próximo item <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            </div></a>
+          </div>
+          <div class="row">
+            <a href="../carrinho.html"><div class="col-md-3 col-sm-3 pull-right carrinho">
+              <h4 class="text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Ver carrinho</h4>
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <div class="container-fluid open-texts">
+      <div class="row">
+        <h4>Quem viu esse produto também comprou: </h4>
+      </div>
+    </div>
+
+    <div class="container" ng-controller="MainController">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ giseleOne.page }}"><img ng-src="../../{{giseleOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ giseleOne.name }}</p>
+          <p class="price">R{{ giseleOne.price | currency}}</p>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ luciaOne.page }}"><img ng-src="../../{{luciaOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ luciaOne.name }}</p>
+          <p class="price">R{{ luciaOne.price | currency}}</p>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ helenaOne.page }}"><img ng-src="../../{{helenaOne.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ helenaOne.name }}</p>
+          <p class="price">R{{ helenaOne.price | currency}}</p>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <a ng-href="{{ mariana.page }}"><img ng-src="../../{{mariana.cover}}" class="img-responsive img-thumbnail pictures" alt='Produto disponível para pronta-entrega'></a>
+          <p> {{ mariana.name }}</p>
+          <p class="price">R{{ mariana.price | currency}}</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/loginScript.js"></script>
+    
+    <!-- Modules -->
+    <script src="../../js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="../../js/controllers/MainController.js"></script>
+
+    <script src='../js/jquery.zoom.js'></script>
+  </body>
+</html>
